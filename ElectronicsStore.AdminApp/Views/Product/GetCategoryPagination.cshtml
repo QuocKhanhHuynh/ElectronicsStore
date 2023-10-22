@@ -1,0 +1,66 @@
+﻿@using ElectronicsStore.Models.Commons
+@using ElectronicsStore.Models.Categories
+@model Pagination<CategoryViewModel>
+
+@{
+    ViewData["Title"] = "Danh sách loại hàng";
+}
+
+@section Script{
+    @if (ViewBag.Success != null)
+    {
+        <script>alert('@Html.Raw(ViewBag.Success)')</script>
+        ViewBag.Success = null;
+    }
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Danh sách loại hàng</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Danh sách loại hàng</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="CreateCategory" asp-controller="Product">Tạo loại hàng </a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.Raw("Mã loại hàng")
+                                </th>
+                                <th>
+                                    @Html.Raw("Tên loại hàng")
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Items)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Sửa", "UpdateCategory", new {  id=item.Id  }) |
+                                        @Html.ActionLink("Xóa", "DeleteCategory", new {  id=item.Id  })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            @await Component.InvokeAsync("Pager",Model)
+        </div>
+    </div>
+</div>

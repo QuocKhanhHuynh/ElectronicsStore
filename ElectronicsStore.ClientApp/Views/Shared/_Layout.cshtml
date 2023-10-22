@@ -1,0 +1,391 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+
+    <!-- Site title -->
+    <title>@ViewData["Title"]</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- helper class css -->
+    <link href="/assets/css/helper.min.css" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link href="/assets/css/plugins.css" rel="stylesheet">
+    <!-- Main Style CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/skin-default.css" rel="stylesheet" id="galio-skin">
+</head>
+
+<body>
+    <input type="hidden" id="_configuration" value="@_configuration["BaseAddress"]" />
+    <div class="wrapper">
+
+        <!-- header area start -->
+        <header>
+
+            <!-- header top start -->
+            <div class="header-top-area bg-gray text-center text-md-left">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-5">
+                            <div class="header-call-action">
+                                <a href="#">
+                                    <i class="fa fa-envelope"></i>
+                                    Galio@Inaternal.com
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-phone"></i>
+                                    +84 123456789
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-7">
+                            <div class="header-top-right float-md-right float-none">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            @{
+                                                if (User.Identity.IsAuthenticated)
+                                                {
+                                                    <div class="dropdown header-top-dropdown">
+                                                        <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false">
+                                                            @Html.Raw(User.Identity.Name)
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="myaccount">
+                                                            <a class="dropdown-item" asp-action="GetMyDetail" asp-controller="Account">Chi tiết</a>
+                                                            <a class="dropdown-item" asp-action="Logout" asp-controller="Account">Đăng xuất</a>
+                                                        </div>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="dropdown header-top-dropdown">
+                                                        <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false">
+                                                            Tài khoản
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="myaccount">
+                                                            <a class="dropdown-item" asp-action="Login" asp-controller="Account">Đăng nhập</a>
+                                                            <a class="dropdown-item" asp-action="RegisterAccount" asp-controller="Account">Đăng ký</a>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            }
+                                        </li>
+                                        <li>
+                                            <a asp-action="GetListCart" asp-controller="Order"> Giỏ hàng</a>
+                                        </li>
+                                        <li>
+                                            <a asp-action="Checkout" asp-controller="Order">Thanh toán</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header top end -->
+
+            <!-- header middle start -->
+            <div class="header-middle-area pt-20 pb-20">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="brand-logo">
+                                <a href="index.html">
+                                    <img src="/assets/img/logo/logo.png" alt="brand logo">
+                                </a>
+                            </div>
+                        </div> <!-- end logo area -->
+                        <div class="col-lg-9">
+                            <div class="header-middle-right">
+                                <div class="header-middle-shipping mb-20">
+                                    <div class="single-block-shipping">
+                                        <div class="shipping-icon">
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                        <div class="shipping-content">
+                                            <h5>Thời gian làm việc</h5>
+                                            <span>Các ngày trong tuần: 8.00 - 18.00</span>
+                                        </div>
+                                    </div> <!-- end single shipping -->
+                                    <div class="single-block-shipping">
+                                        <div class="shipping-icon">
+                                            <i class="fa fa-truck"></i>
+                                        </div>
+                                        <div class="shipping-content">
+                                            <h5>Miễn phí vận chuyển</h5>
+                                            <span>Trong bán kính 10km</span>
+                                        </div>
+                                    </div> <!-- end single shipping -->
+                                    <div class="single-block-shipping">
+                                        <div class="shipping-icon">
+                                            <i class="fa fa-money"></i>
+                                        </div>
+                                        <div class="shipping-content">
+                                            <h5>Hoàn tiền 100%</h5>
+                                            <span>Nếu có lỗi trong vòng 30 ngày</span>
+                                        </div>
+                                    </div> <!-- end single shipping -->
+                                </div>
+                                <div class="header-middle-block">
+                                    <div class="header-middle-searchbox">
+                                        <form asp-action="index" asp-controller="product" method="get">
+                                            <input name="keyword" type="text" placeholder="Tìm kiếm..." value="@ViewBag.Keyword">
+                                            <button class="search-btn"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                    <div class="header-mini-cart">
+                                        <div class="mini-cart-btn">
+                                            <a style="color: white" asp-action="GetListCart" asp-controller="Order">
+                                                <i class="fa fa-shopping-cart"></i></a>
+                                            <span id="number-items" class="cart-notification"></span>
+                                        </div>
+                                        <div id="" class="cart-total-price">
+                                            <span id="number-total"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header middle end -->
+
+            <!-- main menu area start -->
+            <div class="main-header-wrapper bdr-bottom1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="main-header-inner">
+                                <div class="category-toggle-wrap">
+                                    <div class="category-toggle">
+                                        Danh mục
+                                        <div class="cat-icon">
+                                            <i class="fa fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                    <nav class="category-menu @RenderSection("Category", true)">
+                                        @await Component.InvokeAsync("Category")
+                                    </nav>
+                                </div>
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li @RenderSection("HomeActive",false)><a asp-action="index" asp-controller="home"><i class="fa fa-home"></i>Trang chủ</a></li>
+                                            <li @RenderSection("ProductActive",false)><a asp-action="index" asp-controller="product">Sản phẩm</a></li>
+                                            <li @RenderSection("OrderActive",false)><a asp-action="Index" asp-controller="Order">Hóa đơn</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-block d-lg-none">
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main menu area end -->
+
+        </header>
+        <!-- header area end -->
+        <div>
+            @RenderBody()
+        </div>
+        <!-- latest product end -->
+
+        <!-- brand area start -->
+        <div class="brand-area pt-28 pb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-30">
+                            <div class="title-icon">
+                                <i class="fa fa-crop"></i>
+                            </div>
+                            <h3>Nhãn hiệu nổi tiếng</h3>
+                        </div> <!-- section title end -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        @await Component.InvokeAsync("Brand")
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand area end -->
+
+        <!-- footer area start -->
+        <footer>
+            <!-- footer top start -->
+            <div class="footer-top bg-black pt-14 pb-14">
+                <div class="container">
+                    <div class="footer-top-wrapper">
+                        <div class="newsletter__wrap">
+                            <div class="newsletter__title">
+                                <div class="newsletter__content">
+                                </div>
+                            </div>
+                            <div class="social-icons">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Google-plus"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube"></i></a>
+                            </div>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div>
+                            <!-- mailchimp-alerts end -->
+                        </div>
+                        <div class="social-icons">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer top end -->
+            <!-- footer main start -->
+            <div class="footer-widget-area pt-40 pb-38 pb-sm-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget mb-sm-30">
+                                <div class="widget-title mb-10 mb-sm-6">
+                                    <h4>Liên hệ hỗ trợ</h4>
+                                </div>
+                                <div class="widget-body">
+                                    <ul class="location">
+                                        <li><i class="fa fa-envelope"></i>support@galio.com</li>
+                                        <li><i class="fa fa-phone"></i>+84 123 456 789</li>
+                                        <li>
+                                            <i class="fa fa-map-marker"></i>Địa chỉ: Ninh Kiều - Cần Thơ
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single widget end -->
+                        </div> <!-- single widget column end -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget mb-sm-30">
+                                <div class="widget-title mb-10 mb-sm-6">
+                                    <h4>Tài khoản</h4>
+                                </div>
+                                <div class="widget-body">
+                                    <ul>
+                                        <li><a asp-controller="Account" asp-action="Login">Đăng nhập</a></li>
+                                        <li><a asp-controller="Account" asp-action="Logout">Đăng xuất</a></li>
+                                        <li><a asp-controller="Account" asp-action="ForgetPassword">Quên mật khẩu</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single widget end -->
+                        </div> <!-- single widget column end -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget mb-sm-30">
+                                <div class="widget-title mb-10 mb-sm-6">
+                                    <h4>Vãng lai</h4>
+                                </div>
+                                <div class="widget-body">
+                                    <ul>
+                                        <li><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+                                        <li><a asp-controller="Product" asp-action="Index">Sản phẩm</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single widget end -->
+                        </div> <!-- single widget column end -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget mb-sm-30">
+                                <div class="widget-title mb-10 mb-sm-6">
+                                    <h4>Quy trình đặt hàng</h4>
+                                </div>
+                                <div class="widget-body">
+                                    <ul>
+                                        <li><a href="#">Xem sản phẩm</a></li>
+                                        <li><a href="#">Thêm giỏ hàng</a></li>
+                                        <li><a href="#">Chọn đặt hàng</a></li>
+                                        <li><a href="#">Nhập thông tin thanh toán</a></li>
+                                        <li><a href="#">Nhấn tạo hóa đơn</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single widget end -->
+                        </div> <!-- single widget column end -->
+                    </div>
+                </div>
+            </div>
+            <!-- footer main end -->
+            <!-- footer bootom start -->
+            <div class="footer-bottom-area bg-gray pt-20 pb-20">
+                <div class="container">
+                    <div class="footer-bottom-wrap">
+                        <div class="copyright-text">
+                        </div>
+                        <div class="payment-method-img">
+                            <img src="assets/img/payment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer bootom end -->
+
+        </footer>
+        <!-- footer area end -->
+
+    </div>
+
+    <!-- Scroll to top start -->
+    <div class="scroll-top not-visible">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- Scroll to Top End -->
+
+
+
+    <!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+    <script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <!-- Jquery Min Js -->
+    <script src="/assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <!-- Popper Min Js -->
+    <script src="/assets/js/vendor/popper.min.js"></script>
+    <!-- Bootstrap Min Js -->
+    <script src="/assets/js/vendor/bootstrap.min.js"></script>
+    <!-- Plugins Js-->
+    <script src="/assets/js/plugins.js"></script>
+    <!-- Ajax Mail Js -->
+    <script src="/assets/js/ajax-mail.js"></script>
+    <!-- Active Js -->
+    <script src="/assets/js/main.js"></script>
+    <!-- Switcher JS [Please Remove this when Choose your Final Projct] -->
+    <script src="/assets/js/switcher.js"></script>
+    <script src="/lib/mustache.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+    <script>
+        var cartControler = new Cart();
+        cartControler.initialize();
+    </script>
+
+    @RenderSection("Script", false)
+</body>
+
+
+
+</html>

@@ -1,0 +1,76 @@
+﻿@model ElectronicsStore.Models.Users.UserViewModel
+
+@section Category{
+    category-style-2
+}
+@section Script{
+    @{
+        if (ViewBag.Notify != null)
+        {
+            <script>alert('@Html.Raw(ViewBag.Notify)')</script>
+            ViewBag.Notify = null;
+        }
+    }
+}
+
+@{
+    ViewData["Title"] = "Thông tin cá nhân";
+}
+
+<div class="login-register-wrapper">
+    <div class="container">
+        <div class="member-area-from-wrap">
+            <div class="row">
+                <div style="margin-left: auto; margin-right: auto;" class="col-lg-7">
+                    <div class="login-reg-form-wrap  pr-lg-50" >
+                        <h2 >Thông tin cá nhân</h2>
+                        <div>
+                            <dl class="row">
+                                <dt class="col-sm-2">
+                                    @Html.DisplayNameFor(model => model.UserName)
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.UserName)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    @Html.DisplayNameFor(model => model.FullName)
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.FullName)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    @Html.DisplayNameFor(model => model.DateCreate)
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.DateCreate)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    @Html.DisplayNameFor(model => model.Email)
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Email)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    @Html.DisplayNameFor(model => model.PhoneNumber)
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.PhoneNumber)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    @Html.DisplayNameFor(model => model.Address)
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Address)
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="single-input-item">
+                        <a asp-action="UpdateAccount" asp-controller="Account" class="sqr-btn">Cập nhật</a>
+                        <a asp-action="UpdatePassword" asp-controller="Account" class="sqr-btn">Cập nhật mật khẩu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

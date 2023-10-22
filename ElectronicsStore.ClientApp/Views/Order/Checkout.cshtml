@@ -1,0 +1,50 @@
+﻿@model ElectronicsStore.Models.SaleBills.SaleBillCreateRequest
+@section Category{
+    category-style-2
+}
+@{
+    ViewData["Title"] = "Thanh toán";
+}
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="checkout-page-wrapper">
+    <div class="row">
+        <!-- Checkout Billing Details -->
+        <div style="margin-left:auto; margin-right:auto" class="col-lg-6">
+            <div class="checkout-billing-details-wrap">
+                <h2>Thông tin hóa đơn</h2>
+                <div class="billing-form-wrap">
+                    <form asp-action="Checkout" asp-controller="Order" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="single-input-item">
+                            <label asp-for="RecipientName" class="required"></label>
+                            <input value="@Model.RecipientName" asp-for="RecipientName" placeholder="Nhập tên người nhận" required />
+                        </div>
+                        <div class="single-input-item">
+                        <label asp-for="Address" class="required"></label>
+                        <input value="@Model.Address" asp-for="Address" placeholder="Nhập địa chỉ nhận hàng" required />
+                        </div>
+
+                        <div class="single-input-item">
+                        <label asp-for="PhoneNumber" class="required"></label>
+                        <input value="@Model.PhoneNumber" asp-for="PhoneNumber" placeholder="Nhập số điện thoại" />
+                        </div>
+                        <div class="single-input-item" >
+                            <button class="sqr-btn">Tạo hóa đơn</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

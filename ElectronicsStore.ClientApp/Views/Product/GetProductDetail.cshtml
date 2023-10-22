@@ -1,0 +1,233 @@
+﻿@model ElectronicsStore.ClientApp.Models.ProductDetailViewModel
+
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+@section Category{
+    category-style-2
+}
+@section ProductActive{
+    class="active"
+}
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product-details-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- product details inner end -->
+                <div class="product-details-inner">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="product-large-slider mb-20 slick-arrow-style_2">
+                                @foreach (var image in Model.Product.Images)
+                                {
+                                    <div class="pro-large-img img-zoom" id="img1">
+                                        <img src="@($"{_configuration["BaseAddress"]}/Image/{image}")" alt="" />
+                                    </div>
+                                }
+                            </div>
+                            <div class="pro-nav slick-padding2 slick-arrow-style_2">
+                                @foreach(var image in Model.Product.Images)
+                                {
+                                    <div class="pro-nav-thumb"><img src="@($"{_configuration["BaseAddress"]}/Image/{image}")" alt="" /></div>
+                                }
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-details-des mt-md-34 mt-sm-34">
+                                <h3><a href="product-details.html">@Html.Raw(Model.Product.Name)</a></h3>
+                                <div class="pricebox">
+                                    @{
+                                        if (Model.Product.OfferPrice == 0)
+                                        {
+                                            <span class="regular-price">@(Model.Product.SalePrice.ToString("N0"))đ</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="regular-price">@Model.Product.OfferPrice.ToString("N0")đ</span>
+                                            <span class="old-price"><del>@(Model.Product.SalePrice.ToString("N0"))đ</del></span>
+                                        }
+                                    }
+                                </div>
+                                <p>
+                                    @Html.Raw(Model.Product.Introduce)
+                                </p>
+                                <div class="quantity-cart-box d-flex align-items-center">
+                                    <div class="action_link">
+                                        <a data-id="@Model.Product.Id" class="buy-btn btn-add-cart" href="#">Thêm giỏ hàng<i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product details inner end -->
+                <!-- product details reviews start -->
+                <div class="product-details-reviews mt-34">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product-review-info">
+                                <ul class="nav review-tab">
+                                    <li>
+                                        <a class="active" data-toggle="tab" href="#tab_one">Thông tin</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content reviews-tab">
+                                    @Html.Raw(Model.Product.Description)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product details reviews end -->
+                <!-- related products area start -->
+                <div class="related-products-area mt-34">
+                    <div class="section-title mb-30">
+                        <div class="title-icon">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <h3>Sản phẩm tương tự</h3>
+                    </div> <!-- section title end -->
+                    <!-- featured category start -->
+                    <div class="featured-carousel-active slick-padding slick-arrow-style">
+                        <!-- product single item start -->
+                        @foreach (var item in Model.RelatedProduct)
+                        {
+                            <div class="product-item fix">
+                                <div class="product-thumb">
+                                    <a href="/Product/GetProductDetail?id=@item.Id">
+                                        <img height="150px" src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                    </a>
+                                    @if (item.OfferPrice > 0)
+                                    {
+                                        <div class="product-label">
+                                            <span style="background-color: red">-@(100 - Math.Ceiling((decimal)(item.OfferPrice / (item.SalePrice * 1.0)) * 100))%</span>
+                                        </div>
+                                    }
+                                    <div class="product-action-link">
+                                        <a href="/Product/GetProductDetail?id=@item.Id">
+                                            <span data-toggle="tooltip"
+                                              data-placement="left" title="Xem chi tiết"><i class="fa fa-search"></i></span>
+                                        </a>
+                                        <a href="#" data-id="@item.Id" class="btn-add-cart" data-toggle="tooltip" data-placement="left" title="Thêm giỏ hàng"><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h4><a href="/Product/GetProductDetail?id=@item.Id">@Html.Raw(item.Name)</a></h4>
+                                    <div class="pricebox">
+                                        @{
+                                            if (item.OfferPrice == 0)
+                                            {
+                                                <span class="regular-price">@(item.SalePrice.ToString("N0"))đ</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="regular-price">@item.OfferPrice.ToString("N0")đ</span>
+                                                <span class="old-price"><del>@(item.SalePrice.ToString("N0"))đ</del></span>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <!-- featured category end -->
+                </div>
+                <!-- related products area end -->
+            </div>
+
+            <!-- sidebar start -->
+            <div class="col-lg-3">
+                <div class="shop-sidebar-wrap fix mt-md-22 mt-sm-22">
+                    <div class="sidebar-widget mb-22">
+                        <div class="section-title-2 d-flex justify-content-between mb-28">
+                            <h3>Khuyến mãi</h3>
+                            <div class="category-append"></div>
+                        </div> <!-- section title end -->
+                        <div class="category-carousel-active row" data-row="4">
+                            @foreach(var item in Model.SaleProduct)
+                            {
+                                <div class="col">
+                                    <div class="category-item">
+                                        <div class="category-thumb">
+                                            <a href="/Product/GetProductDetail?id=@item.Id">
+                                                <img src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                            </a>
+                                        </div>
+                                        <div class="category-content">
+                                            <h4><a href="/Product/GetProductDetail?id=@item.Id">@Html.Raw(item.Name)</a></h4>
+                                            <div class="price-box">
+                                                <div class="price-box">
+                                                    <div class="regular-price">@item.OfferPrice.ToString("N0")đ</div>
+                                                    <div class="old-price"><del>@(item.SalePrice.ToString("N0"))đ</del></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <!-- featured category start -->
+                    <div class="sidebar-widget mb-22">
+                        <div class="section-title-2 d-flex justify-content-between mb-28">
+                            <h3>Nổi bật</h3>
+                            <div class="category-append"></div>
+                        </div> <!-- section title end -->
+                        <div class="category-carousel-active row" data-row="4">
+                            @foreach (var item in Model.SaleProduct)
+                            {
+                                <div class="col">
+                                    <div class="category-item fix mb-30">
+                                        <div class="category-thumb">
+                                            <a href="/Product/GetProductDetail?id=@item.Id">
+                                                <img src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                            </a>
+                                            @if (item.OfferPrice > 0)
+                                            {
+                                                <div class="product-label">
+                                                    <span>hot</span>
+                                                </div>
+                                            }
+                                        </div>
+                                        <div class="category-content">
+                                            <h4><a href="/Product/GetProductDetail?id=@item.Id">@Html.Raw(item.Name)</a></h4>
+                                            <div class="price-box">
+                                                @{
+                                                    if (item.OfferPrice == 0)
+                                                    {
+                                                        <div class="regular-price">@(item.SalePrice.ToString("N0"))đ</div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="regular-price">@item.OfferPrice.ToString("N0")đ</div>
+                                                        <div class="old-price"><del>@(item.SalePrice.ToString("N0"))đ</del></div>
+                                                    }
+                                                }
+                                            </div>
+                                        </div>
+                                    </div> <!-- end single item -->
+                                </div> <!-- end single item column -->
+                            }
+                        </div>
+                    </div>
+                    <!-- featured category end -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </div>
+</div>

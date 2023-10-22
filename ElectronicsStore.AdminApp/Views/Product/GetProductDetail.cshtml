@@ -1,0 +1,107 @@
+﻿@model ElectronicsStore.Models.Products.ProductViewModel
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+
+@{
+    ViewData["Title"] = "Thông tin sản phẩm";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Thông tin sản phẩm</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Product">Danh sách sản phẩm</a></li>
+        <li class="breadcrumb-item active">Thông tin sản phẩm</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="Index" asp-controller="Product">Về danh sách sản phẩm</a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <dl class="row">
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Id)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Id)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Name)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Name)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.CategoryName)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.CategoryName)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.BrandName)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.BrandName)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.SalePrice)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.Raw(Model.SalePrice.ToString("N0") + "đ")
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.OfferPrice)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.Raw(Model.OfferPrice.ToString("N0") + "đ")
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Origin)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Origin)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Introduce)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.Raw(Model.Introduce)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Description)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.Raw(Model.Description)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.PurchaseCount)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.PurchaseCount)
+                            </dd>
+                            @{
+                                int i = 0;
+                                foreach (var image in Model.Images)
+                                {
+                                    i++;
+                                    <dt class="col-sm-2">
+                                        @Html.Raw($"Ảnh {i}")
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        <img width="120" src=@($"{_configuration["BaseAddress"]}/Image/{image}")>
+                                    </dd>
+                                }
+                            }
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-header">
+            <a class="btn btn-success" href=@($"/Product/UpdateProduct?id={Model.Id}")>Cập nhật sản phẩm </a>
+        </div>
+    </div>
+</div>

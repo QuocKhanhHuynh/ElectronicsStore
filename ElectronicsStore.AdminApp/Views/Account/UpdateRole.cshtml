@@ -1,0 +1,36 @@
+﻿@model ElectronicsStore.Models.Roles.RoleUpdateRequest
+@{
+    ViewData["Title"] = "Cập nhật vai trò";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Cập nhật vai trò</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a asp-action="GetRoles" asp-controller="Account">Danh sách vai trò</a></li>
+        <li class="breadcrumb-item active">Cập nhật vai trò</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="GetRoles" asp-controller="Account">Về danh sách vai trò</a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="UpdateRole" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" class="form-control" />
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Cập nhật" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,103 @@
+﻿@model ElectronicsStore.AdminApp.Models.Import.ImportBillsViewModel
+
+
+@{
+    ViewData["Title"] = "Danh sách hóa đơn nhập hàng";
+}
+
+@section Script{
+    @if (ViewBag.Success != null)
+    {
+        <script>alert('@Html.Raw(ViewBag.Success)')</script>
+        ViewBag.Success = null;
+    }
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Danh sách hóa đơn nhập hàng</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Danh sách hóa đơn nhập hàng</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="CreateImportBill" asp-controller="Import">Tạo hoá đơn </a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <form asp-action="Index" asp-controller="Import" method="get">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <input type="text" value="@Model.Id" name="id" class="form-control" placeholder="Nhập mã hóa đơn" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select name="categoryId" asp-items="@Model.Admins" class="form-control">
+                                                <option value=@null>Người lập</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="submit" class="btn btn-primary">Tìm</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <hr />
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.Raw("Mã hóa đơn")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Ngày tạo")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Người tạo")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Nhà cung cấp")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Tổng giá trị")
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Bills.Items)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Id)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Datecreate)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UserName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.SupplierName)
+                                        </td>
+                                        <td>
+                                            @Html.Raw(item.TotalValue.ToString("N0") + "đ")
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Xem", "GetImportBillDetail", new { item.Id })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            @await Component.InvokeAsync("Pager",Model.Bills)
+        </div>
+    </div>
+</div>

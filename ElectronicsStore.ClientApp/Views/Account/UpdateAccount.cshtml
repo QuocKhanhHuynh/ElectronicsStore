@@ -1,0 +1,50 @@
+﻿@model ElectronicsStore.Models.Users.UserUpdateRequest
+@section Category{
+    category-style-2
+}
+
+@{
+    ViewData["Title"] = "Cập nhật tài khoản";
+}
+
+<div class="login-register-wrapper">
+    <div class="container">
+        <div class="member-area-from-wrap">
+            <div class="row">
+                <div style="margin-left: auto; margin-right: auto;" class="col-lg-6">
+                    <div class="login-reg-form-wrap mt-md-34 mt-sm-34">
+                        <h2>Cập nhật tài khoản</h2>
+                        <form asp-action="UpdateAccount" asp-controller="Account" method="post">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="single-input-item">
+                                        <label asp-for="FullName" class="required"></label>
+                                        <input input asp-for="FullName" placeholder="Nhập họ tên" value="@Model.FullName" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single-input-item">
+                                        <label asp-for="Email" class="required"></label>
+                                        <input asp-for="Email" placeholder="Nhập email" value="@Model.Email" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-input-item">
+                                <label asp-for="PhoneNumber" class="required"></label>
+                                <input asp-for="PhoneNumber" placeholder="Nhập số điện thoại" value="@Model.PhoneNumber" required />
+                            </div>
+                            <div class="single-input-item">
+                                <label asp-for="Address" class="required"></label>
+                                <input asp-for="Address" placeholder="Nhập địa chỉ" value="@Model.Address" required />
+                            </div>
+                            <div class="single-input-item">
+                                <button class="check-btn sqr-btn ">Cập nhật</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

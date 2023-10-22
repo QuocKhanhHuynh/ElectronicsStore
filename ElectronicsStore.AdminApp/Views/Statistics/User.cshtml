@@ -1,0 +1,77 @@
+﻿@using ElectronicsStore.Models.Commons
+@using ElectronicsStore.Models.Users
+@model Pagination<UserQuickViewModel>
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+@{
+    ViewData["Title"] = "Thống kê người dùng";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Thống kê người dùng</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Thống kê người dùng</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <form asp-action="User" asp-controller="Statistics" method="get">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <input value="@ViewBag.TimeLine" type="number" name="timeLine" placeholder="Số ngày thống kê gần nhất" class="form-control" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="submit" class="btn btn-primary">Tìm</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <hr />
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.Raw("Username")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Vai trò")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Ngày tạo tài khoản")
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Items)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UserName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.RoleName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DateCreate)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Xem", "GetUserDetail", new { item.Id })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            @await Component.InvokeAsync("Pager",Model)
+        </div>
+    </div>
+</div>

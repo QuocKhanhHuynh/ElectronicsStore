@@ -1,0 +1,130 @@
+﻿@model ElectronicsStore.Models.SaleBills.SaleBillInformation
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+@{
+    ViewData["Title"] = "Chi tiết hóa đơn bán hàng";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Chi tiết hóa đơn</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Chi tiết hóa đơn</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="Index" asp-controller="Home">Về trang chủ</a>
+        </div>
+        <div class="card-body">
+            <div class="col-md-12">
+                <div>
+                    <dl class="row">
+                         <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Id)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Id)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.DateCreate)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.DateCreate)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.TotalValue)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.Raw(Model.TotalValue.ToString("N0") + "đ")
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.RecipientName)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.RecipientName)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Address)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Address)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.PhoneNumber)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.PhoneNumber)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <hr />
+            <h4>Sản phẩm</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.Raw("Ảnh")
+                                </th>
+                                <th>
+                                    @Html.Raw("Mã sản phẩm")
+                                </th>
+                                <th>
+                                    @Html.Raw("Tên sản phẩm")
+                                </th>
+                                <th>
+                                    @Html.Raw("Số lượng")
+                                </th>
+                                <th>
+                                    @Html.Raw("Giá bán")
+                                </th>
+                                <th>
+                                    @Html.Raw("Tổng giá")
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Details)
+                            {
+                                <tr>
+                                    <td>
+                                        <img width="120" src=@($"{_configuration["BaseAddress"]}/Image/{item.Image}")>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProductId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProductName)
+                                    </td>
+                                    <td>
+                                        @Html.Raw(item.Quanlity.ToString("N0"))
+                                    </td>
+                                    <td>
+                                        @Html.Raw(item.SalePrice.ToString("N0") + "đ")
+                                    </td>
+                                    <td>
+                                        @Html.Raw((item.SalePrice*item.Quanlity).ToString("N0") + "đ")
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card-header">
+            <!--<a class="btn btn-success" href="/Home/UpdateBill?id=(ViewBag.BillId)&statusId=(ViewBag.StatusId + 1)">Cập nhật trạng thái</a>-->
+            <form asp-action="UpdateBill" asp-controller="Home" method="get">
+                <input type="hidden" value="@Model.Id" name="id" />
+                <span>Cập nhật trạng thái: </span>
+                <div class="col-md-3">
+                    <select onchange="this.form.submit()" name="statusId" asp-items="@ViewBag.Statuses" class="form-control">
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

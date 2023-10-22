@@ -1,0 +1,12 @@
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\bin\Debug\net7.0\ElectronicsStore.Models.deps.json
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\bin\Debug\net7.0\ElectronicsStore.Models.dll
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\bin\Debug\net7.0\ElectronicsStore.Models.pdb
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\ElectronicsStore.Models.csproj.AssemblyReference.cache
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\ElectronicsStore.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\ElectronicsStore.Models.AssemblyInfoInputs.cache
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\ElectronicsStore.Models.AssemblyInfo.cs
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\ElectronicsStore.Models.csproj.CoreCompileInputs.cache
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\ElectronicsStore.Models.dll
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\refint\ElectronicsStore.Models.dll
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\ElectronicsStore.Models.pdb
+D:\nlcs\ElectronicsStore\ElectronicsStore.Models\obj\Debug\net7.0\ref\ElectronicsStore.Models.dll

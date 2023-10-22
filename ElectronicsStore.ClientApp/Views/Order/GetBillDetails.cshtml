@@ -1,0 +1,64 @@
+﻿@model ElectronicsStore.Models.SaleBills.SaleBillInformation
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+@section Category{
+    category-style-2
+}
+@section OrderActive{
+   class="active"
+}
+@{
+    ViewData["Title"] = "Chi tiết hóa đơn";
+}
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart-main-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="cart-table table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="pro-thumbnail">@Html.Raw("Ảnh")</th>
+                                <th class="pro-title">@Html.Raw("Sản phẩm")</th>
+                                <th class="pro-price">@Html.Raw("Giá")</th>
+                                <th class="pro-quantity">@Html.Raw("Số lượng")</th>
+                                <th class="pro-subtotal">@Html.Raw("Tổng")</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Details)
+                            {
+                                <tr>
+                                    <td class="pro-thumbnail">
+                                        <a href="/Product/GetProductDetail?id=@item.ProductId ">
+                                            <img width="120px" class="img-fluid" src="@($"{_configuration["BaseAddress"]}/Image/{item.Image}")" />
+                                        </a>
+                                    </td>
+                                    <td class="pro-title"><a href="/Product/GetProductDetail?id=@item.ProductId">@item.ProductName</a></td>
+                                    <td class="pro-price"><span>@item.SalePrice.ToString("N0")đ</span></td>
+                                    <td class="pro-quantity">
+                                        @item.Quanlity
+                                    </td>
+                                    <td class="pro-subtotal"><span>@((item.Quanlity * item.SalePrice).ToString("N0"))đ</span></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

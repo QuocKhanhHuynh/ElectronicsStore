@@ -1,0 +1,67 @@
+﻿@using ElectronicsStore.Models.Commons
+@using ElectronicsStore.Models.Products
+@model Pagination<ProductBaseViewModel>
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+@{
+    ViewData["Title"] = "Hàng bán hết";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Hàng tồn kho</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Hàng bán hết</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="GetProductNotSoldout" asp-controller="Import">Xem hàng tồn kho</a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.Raw("Ảnh")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Mã sản phẩm")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Tên sản phẩm")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Lượng mua")
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Items)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img width="120" src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Id)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PurchaseCount)
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            @await Component.InvokeAsync("Pager",Model)
+        </div>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+﻿@model ElectronicsStore.Models.ImportBills.ImportBillCreateRequest
+
+@{
+    ViewData["Title"] = "Tạo hóa đơn nhập";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Danh sách hàng nhập</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Tạo hóa đơn nhập</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="Index" asp-controller="Import">Về danh sách hóa đơn</a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.Raw("Ảnh")
+                                </th>
+                                <th>
+                                    @Html.Raw("Mã sản phẩm")
+                                </th>
+                                <th>
+                                    @Html.Raw("Tên sản phẩm")
+                                </th>
+                                <th>
+                                    @Html.Raw("Số lượng")
+                                </th>
+                                <th>
+                                    @Html.Raw("Giá nhập")
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="list_items_bill">
+
+                        </tbody>
+                    </table>
+                    <form asp-action="CreateImportBill">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="SupplierId" class="control-label"></label>
+                            <div class="col-md-3">
+                            <select asp-for="SupplierId" asp-items="@ViewBag.Suppliers" class="form-control">
+                                <option value=@null>Chọn nhà cung cấp</option>
+                            </select>
+                            </div>
+                            <span asp-validation-for="SupplierId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Tạo" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="tmpl_load_cart_bill" type="x-tmpl-mustache">
+    <tr>
+        <td>
+            <img width="120" src="{{image}}">
+        </td>
+        <td>
+            {{id}}
+        </td>
+        <td>
+            {{name}}
+        </td>
+        <td>
+            <div>
+                <input type="number" size="2" class="ipt-quan" data-id="{{id}}" id="txt_quantity_{{id}}" value="{{quanlity}}">
+            </div>
+        </td>
+        <td>
+            <div>
+                <input type="number" size="7" class="ipt-price" data-id="{{id}}" id="txt_price_{{id}}" value="{{price}}">
+            </div>
+        </td>
+        <td class="shoping__cart__item__close">
+            <button style="border: none" class="btn-remove" data-id="{{id}}"><i class="fa-solid fa-circle-xmark"></i></button>
+        </td>
+    </tr>
+</script>
+

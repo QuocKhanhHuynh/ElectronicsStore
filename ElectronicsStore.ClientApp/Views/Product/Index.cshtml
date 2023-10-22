@@ -1,0 +1,155 @@
+﻿@using ElectronicsStore.Models.Commons
+@using ElectronicsStore.Models.Products
+@model Pagination<ProductQuickViewModel>
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+
+@{
+    ViewData["Title"] = "Sản phẩm";
+}
+
+@section Category{
+    category-style-2
+}
+@section ProductActive{
+    class="active"
+}
+
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-main-wrapper">
+    <div class="container">
+        <div class="row">
+            <!-- product main wrap start -->
+            <div class="col-12">
+                <div class="shop-banner img-full">
+                    <img src="assets/img/banner3.jpg" alt="">
+                </div>
+                <!-- product view wrapper area start -->
+                <div class="shop-product-wrapper pt-34">
+                    <!-- shop product top wrap start -->
+                    <div class="shop-top-bar">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-6">
+                                <div class="top-bar-left">
+                                    <div class="product-view-mode mr-70 mr-sm-0">
+                                        <a class="active" href="#" data-target="grid"><i class="fa fa-th"></i></a>
+                                        <a href="#" data-target="list"><i class="fa fa-list"></i></a>
+                                    </div>
+                                    <div class="product-amount">
+                                        <p>@Model.TotalRecords kết quả</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- shop product top wrap start -->
+
+                    <!-- product item start -->
+                    <div class="shop-product-wrap grid row">
+                            @foreach(var item in Model.Items)
+                            {
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                <!-- product single grid item start -->
+                                    <div class="product-item fix mb-30">
+                                        <div class="product-thumb">
+                                            <a href="/Product/GetProductDetail?id=@item.Id">
+                                                <img height="150px" src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                            </a>
+                                            @if (item.OfferPrice > 0)
+                                            {
+                                                <div class="product-label">
+                                                <span style="background-color: red">-@(100-Math.Ceiling((decimal)(item.OfferPrice/(item.SalePrice * 1.0))*100))%</span>
+                                                </div>
+                                            }
+                                            <div class="product-action-link">
+                                                <a href="/Product/GetProductDetail?id=@item.Id"> <span title="Xem chi tiết"><i class="fa fa-search"></i></span> </a>
+                                                <a href="#" data-id="@item.Id" class="btn-add-cart" data-toggle="tooltip" data-placement="left"><span title="Thêm giỏ hàng"><i class="fa fa-shopping-cart"></i></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h4><a href="/Product/GetProductDetail?id=@item.Id">@Html.Raw(item.Name)</a></h4>
+                                            <div class="pricebox">
+                                                @{
+                                                    if (item.OfferPrice == 0)
+                                                    {
+                                                        <span class="regular-price">@(item.SalePrice.ToString("N0"))đ</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="regular-price">@item.OfferPrice.ToString("N0")đ</span>
+                                                        <span class="old-price"><del>@(item.SalePrice.ToString("N0"))đ</del></span>
+                                                    }
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- product single grid item end -->
+                                <!-- product single list item start -->
+                                    <div class="product-list-item mb-30">
+                                        <div class="product-thumb">
+                                            <a href="/Product/GetProductDetail?id=@item.Id">
+                                                <img height="150px" src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                            </a>
+                                            @if (item.OfferPrice > 0)
+                                            {
+                                                <div class="product-label">
+                                                    <span style="background-color: red">-@(100-Math.Ceiling((decimal)(item.OfferPrice/(item.SalePrice * 1.0))*100))%</span>
+                                                </div>
+                                            }
+                                        </div>
+                                        <div class="product-list-content">
+                                            <h3><a href="/Product/GetProductDetail?id=@item.Id">@Html.Raw(item.Name)</a></h3>
+                                            <div class="pricebox">
+                                                @{
+                                                    if (item.OfferPrice == 0)
+                                                    {
+                                                        <span class="regular-price">@(item.SalePrice.ToString("N0"))đ</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="regular-price">@item.OfferPrice.ToString("N0")đ</span>
+                                                        <span class="old-price"><del>@(item.SalePrice.ToString("N0"))đ</del></span>
+                                                    }
+                                                }
+                                            </div>
+                                            <div class="product-list-action-link">
+                                                <a class="buy-btn btn-add-cart" data-id="@item.Id" href="#" data-toggle="tooltip" data-placement="top" title="Thêm giỏ hàng"><i class="fa fa-shopping-cart"></i> </a>
+                                                <a href="/Product/GetProductDetail?id=@item.Id"> <span data-toggle="tooltip" data-placement="top" title="Xem chi tiết"><i class="fa fa-search"></i></span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- product single list item start -->
+                                </div> <!-- product single column end -->
+                            }
+                    </div>
+                    <!-- product item end -->
+                </div>
+                <!-- product view wrapper area end -->
+
+                <!-- start pagination area -->
+                <div class="paginatoin-area text-center pt-28">
+                    <div class="row">
+                        <div class="col-12">
+                            @await Component.InvokeAsync("Pager",Model)
+                        </div>
+                    </div>
+                </div>
+                <!-- end pagination area -->
+
+            </div>
+            <!-- product main wrap end -->
+        </div>
+    </div>
+</div>

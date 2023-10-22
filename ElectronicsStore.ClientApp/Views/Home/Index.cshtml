@@ -1,0 +1,186 @@
+﻿@model ElectronicsStore.ClientApp.Models.HomeViewModel
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+@section Category{
+    hm-1
+}
+@section HomeActive{
+   class="active"
+}
+
+<!-- hero slider start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slider-wrapper-area">
+                        <div class="hero-slider-active hero__1 slick-dot-style hero-dot" style="margin:0px">
+                            <div class="single-slider">
+                                <img style="width:1200px" src="~/assets/img/banner1.jpg" />
+                            </div>
+                            <div class="single-slider">
+                                <img style="width:1200px" src="~/assets/img/banner2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero slider end -->
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-wrap">
+                            <nav aria-label="breadcrumb">
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sale product start -->
+        <div class="latest-product">
+            <div class="container">
+                <div class="section-title mb-30">
+                    <div class="title-icon">
+                        <i class="fa fa-flash"></i>
+                    </div>
+                    <h3>Sản phẩm giảm giá</h3>
+                </div> <!-- section title end -->
+                <!-- featured category start -->
+                <div class="latest-product-active slick-padding slick-arrow-style">
+                @foreach(var item in Model.SaleProduct)
+                {
+                    <div class="product-item fix">
+                        <div class="product-thumb">
+                            <a href="/Product/GetProductDetail?id=@item.Id">
+                                <img height="150px" src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                            </a>
+                            <div class="product-label">
+                            <span style="background-color: red">-@(100-Math.Ceiling((decimal)(item.OfferPrice/(item.SalePrice * 1.0))*100))%</span>
+                            </div>
+                            <div class="product-action-link">
+                                <a href="/Product/GetProductDetail?id=@item.Id">
+                                    <span data-toggle="tooltip"
+                                      data-placement="left" title="Xem chi tiết"><i class="fa fa-search"></i></span>
+                                </a>
+                                <a href="#" data-id="@item.Id" class="btn-add-cart" data-toggle="tooltip" data-placement="left" title="Thêm giỏ hàng"><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h4><a href="/Product/GetProductDetail?id=@item.Id">@Html.Raw(item.Name)</a></h4>
+                            <div class="pricebox">
+                            <span class="regular-price">@item.OfferPrice.ToString("N0")đ</span>
+                            <span class="old-price"><del>@(item.SalePrice.ToString("N0"))đ</del></span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+                <!-- featured category end -->
+            </div>
+        <!-- sale product end -->
+        <!-- feture product start -->
+        <div class="latest-product">
+            <div class="container">
+                <div class="section-title mb-30">
+                    <div class="title-icon">
+                        <i class="fa fa-flash"></i>
+                    </div>
+                    <h3>Sản phẩm nổi bật</h3>
+                </div> <!-- section title end -->
+                <!-- featured category start -->
+                <div class="latest-product-active slick-padding slick-arrow-style">
+                   @foreach(var item in Model.FeatureProduct)
+                    {
+                        <div class="product-item fix">
+                            <div class="product-thumb">
+                                <a href="/Product/GetProductDetail?id=@item.Id">
+                                    <img height="150px" src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                </a>
+                                <div class="product-label">
+                                    <span>hot</span>
+                                </div>
+                                <div class="product-action-link">
+                                    <a href="/Product/GetProductDetail?id=@item.Id">
+                                        <span data-toggle="tooltip"
+                                          data-placement="left" title="Xem chi tiết"><i class="fa fa-search"></i></span>
+                                    </a>
+                                    <a href="#" data-id="@item.Id" class="btn-add-cart" data-toggle="tooltip" data-placement="left" title="Thêm giỏ hàng"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h4><a href="/Product/GetProductDetail?id=@item.Id">@Html.Raw(item.Name)</a></h4>
+                                <div class="pricebox">
+                                    @{
+                                        if(item.OfferPrice == 0)
+                                        {
+                                            <span class="regular-price">@(item.SalePrice.ToString("N0"))đ</span>
+                                        }
+                                        else{
+                                            <span class="regular-price">@item.OfferPrice.ToString("N0")đ</span>
+                                            <span class="old-price"><del>@(item.SalePrice.ToString("N0"))đ</del></span>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!-- featured category end -->
+            </div>
+        </div>
+        <!-- feature product end -->
+
+        <!-- latest product start -->
+        <div class="latest-product">
+            <div class="container">
+                <div class="section-title mb-30">
+                    <div class="title-icon">
+                        <i class="fa fa-flash"></i>
+                    </div>
+                    <h3>Sản phẩm mới nhất</h3>
+                </div> <!-- section title end -->
+                <!-- featured category start -->
+                <div class="latest-product-active slick-padding slick-arrow-style">
+                    @foreach (var item in Model.LastProduct)
+                    {
+                        <div class="product-item fix">
+                            <div class="product-thumb">
+                                <a href="/Product/GetProductDetail?id=@item.Id">
+                                    <img height="150px" src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                </a>
+                                <div class="product-label">
+                                    <span>new</span>
+                                </div>
+                                <div class="product-action-link">
+                                    <a href="/Product/GetProductDetail?id=@item.Id" data-toggle="modal" data-target="#quick_view">
+                                        <span title="Xem chi tiết"><i class="fa fa-search"></i></span>
+                                    </a>
+                                    <a href="#" data-id="@item.Id" class="btn-add-cart" data-toggle="tooltip" data-placement="left" title="Thêm giỏ hàng"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h4><a href="/Product/GetProductDetail?id=@item.Id">@Html.Raw(item.Name)</a></h4>
+                                <div class="pricebox">
+                                    @{
+                                        if (item.OfferPrice == 0)
+                                        {
+                                            <span class="regular-price">@(item.SalePrice.ToString("N0"))đ</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="regular-price">@item.OfferPrice.ToString("N0")đ</span>
+                                            <span class="old-price"><del>@(item.SalePrice.ToString("N0"))đ</del></span>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!-- featured category end -->
+            </div>
+        </div>
+        <!-- latest product end -->

@@ -1,0 +1,110 @@
+﻿@using ElectronicsStore.AdminApp.Models.Product
+@model ProductsViewModel
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+}
+
+@section Script{
+    @if (ViewBag.Success != null)
+    {
+        <script>alert('@Html.Raw(ViewBag.Success)')</script>
+        ViewBag.Success = null;
+    }
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Danh sách sản phẩm</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Danh sách sản phẩm</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="CreateProduct" asp-controller="Product">Tạo sản phẩm </a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <form asp-action="Index" asp-controller="Product" method="get">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <input type="text" value="@Model.Keyword" name="keyword" class="form-control" placeholder="Nhập từ khóa" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select name="categoryId" asp-items="@Model.Categories" class="form-control">
+                                                <option value=@null>Loại hàng</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="submit" class="btn btn-primary">Tìm</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <hr />
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.Raw("Ảnh")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Mã sản phẩm")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Tên sản phẩm")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Giá bán")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Lượng mua")
+                                    </th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Products.Items)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img width="120" src="@($"{_configuration["BaseAddress"]}/Image/{item.DefaultImage}")">
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Id)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                        </td>
+                                        <td>
+                                            @Html.Raw(item.SalePrice.ToString("N0") + "đ")
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PurchaseCount)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Xem", "GetProductDetail", new { item.Id }) |
+                                            @Html.ActionLink("Sửa", "UpdateProduct", new { item.Id }) |
+                                            @Html.ActionLink("Xóa", "DeleteProduct", new { item.Id })
+                                        </td>
+                                        <td>
+                                            <button style="border: none" class="btn-add-cart" data-id="@item.Id"><i class="fa fa-cart-plus"></i></button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            @await Component.InvokeAsync("Pager",Model.Products)
+        </div>
+    </div>
+</div>

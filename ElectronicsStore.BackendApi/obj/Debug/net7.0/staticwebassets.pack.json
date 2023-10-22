@@ -1,0 +1,501 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\00f6695a-8ea9-4cbc-927a-970dda4b929c.png",
+      "PackagePath": "staticwebassets\\Image\\00f6695a-8ea9-4cbc-927a-970dda4b929c.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\01e15b10-490e-4866-8806-e4de47b403cd.jpg",
+      "PackagePath": "staticwebassets\\Image\\01e15b10-490e-4866-8806-e4de47b403cd.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\049f8ad8-55c9-4b42-bdd1-80caf74cb442.jpg",
+      "PackagePath": "staticwebassets\\Image\\049f8ad8-55c9-4b42-bdd1-80caf74cb442.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\0564bbd6-2f5d-4eeb-bd30-3f8b52029a6a.png",
+      "PackagePath": "staticwebassets\\Image\\0564bbd6-2f5d-4eeb-bd30-3f8b52029a6a.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\05f3e1c7-6e83-461d-873d-4ef30e85626d.jpg",
+      "PackagePath": "staticwebassets\\Image\\05f3e1c7-6e83-461d-873d-4ef30e85626d.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\06679d84-d970-4ebe-a31f-18571ad68bed.jpg",
+      "PackagePath": "staticwebassets\\Image\\06679d84-d970-4ebe-a31f-18571ad68bed.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\0b36c585-1f80-448f-a0d0-f285d8ab26e0.jpg",
+      "PackagePath": "staticwebassets\\Image\\0b36c585-1f80-448f-a0d0-f285d8ab26e0.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\0e2bf155-385f-41a9-ad17-7f97288e5a4d.jpg",
+      "PackagePath": "staticwebassets\\Image\\0e2bf155-385f-41a9-ad17-7f97288e5a4d.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\13727b91-fbb9-488f-bfe1-0254100db65a.jpg",
+      "PackagePath": "staticwebassets\\Image\\13727b91-fbb9-488f-bfe1-0254100db65a.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\138ba094-ccbf-47cf-a35c-a9b2adeaad62.jpg",
+      "PackagePath": "staticwebassets\\Image\\138ba094-ccbf-47cf-a35c-a9b2adeaad62.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\18c0af39-d4c0-46f4-b743-e906a5bc8295.png",
+      "PackagePath": "staticwebassets\\Image\\18c0af39-d4c0-46f4-b743-e906a5bc8295.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\1a2f3e6c-dab7-46b9-97fa-0d2130802408.jpg",
+      "PackagePath": "staticwebassets\\Image\\1a2f3e6c-dab7-46b9-97fa-0d2130802408.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\1a58c03f-9c6e-46ab-8a27-bad67d0058a0.jpg",
+      "PackagePath": "staticwebassets\\Image\\1a58c03f-9c6e-46ab-8a27-bad67d0058a0.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\1b19237b-8bb5-4d0a-835c-d2923ac82654.jpg",
+      "PackagePath": "staticwebassets\\Image\\1b19237b-8bb5-4d0a-835c-d2923ac82654.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\1b80062e-e8a9-46d7-b6b7-a21f94853c78.jpg",
+      "PackagePath": "staticwebassets\\Image\\1b80062e-e8a9-46d7-b6b7-a21f94853c78.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\1da2f890-e71d-413f-af60-b4e380dbce6b.jpg",
+      "PackagePath": "staticwebassets\\Image\\1da2f890-e71d-413f-af60-b4e380dbce6b.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\1f111b4b-8317-496c-9637-00d2816057e4.jpg",
+      "PackagePath": "staticwebassets\\Image\\1f111b4b-8317-496c-9637-00d2816057e4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\1fc9d8f5-2509-4827-a95c-ef95677060fe.jpg",
+      "PackagePath": "staticwebassets\\Image\\1fc9d8f5-2509-4827-a95c-ef95677060fe.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\20541bbf-9f69-4153-bf63-30bf7e4c0f1e.jpg",
+      "PackagePath": "staticwebassets\\Image\\20541bbf-9f69-4153-bf63-30bf7e4c0f1e.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\21db6775-b115-43d6-981a-dacd84fd35cf.jpg",
+      "PackagePath": "staticwebassets\\Image\\21db6775-b115-43d6-981a-dacd84fd35cf.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\22821418-0dbe-4284-b3c9-df187e46b72d.jpg",
+      "PackagePath": "staticwebassets\\Image\\22821418-0dbe-4284-b3c9-df187e46b72d.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\2714ae9e-dbc1-4062-9c1c-a65496c35e75.jpg",
+      "PackagePath": "staticwebassets\\Image\\2714ae9e-dbc1-4062-9c1c-a65496c35e75.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\27a355f1-dcc0-4a22-bd8b-e888e469f275.jpg",
+      "PackagePath": "staticwebassets\\Image\\27a355f1-dcc0-4a22-bd8b-e888e469f275.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\28e14675-6929-4c17-86bf-3b6be1393cfd.jpg",
+      "PackagePath": "staticwebassets\\Image\\28e14675-6929-4c17-86bf-3b6be1393cfd.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\2a3c6d55-81c3-427c-9bf5-2af0b538b3fc.png",
+      "PackagePath": "staticwebassets\\Image\\2a3c6d55-81c3-427c-9bf5-2af0b538b3fc.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\2cd69262-b390-4cb7-9734-59472209df55.jpg",
+      "PackagePath": "staticwebassets\\Image\\2cd69262-b390-4cb7-9734-59472209df55.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\2e7dd3fd-c1c9-4e3b-98c0-11cc6e441be7.jpg",
+      "PackagePath": "staticwebassets\\Image\\2e7dd3fd-c1c9-4e3b-98c0-11cc6e441be7.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\325f93ac-9084-4b99-8cf2-4bcd9b8cf57a.png",
+      "PackagePath": "staticwebassets\\Image\\325f93ac-9084-4b99-8cf2-4bcd9b8cf57a.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\33fe3f59-69d5-4679-bf9a-1ebf7fc05bb6.jpg",
+      "PackagePath": "staticwebassets\\Image\\33fe3f59-69d5-4679-bf9a-1ebf7fc05bb6.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\35492b76-b6c6-4d62-b914-c575637e9e2a.jpg",
+      "PackagePath": "staticwebassets\\Image\\35492b76-b6c6-4d62-b914-c575637e9e2a.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\3a33d36a-3a03-4604-93e7-949a9dea1615.jpg",
+      "PackagePath": "staticwebassets\\Image\\3a33d36a-3a03-4604-93e7-949a9dea1615.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\3a36f633-6325-43c8-b9bd-4577402fbeab.jpg",
+      "PackagePath": "staticwebassets\\Image\\3a36f633-6325-43c8-b9bd-4577402fbeab.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\3db76d69-00b7-4a89-8a74-c4cd73a11560.jpg",
+      "PackagePath": "staticwebassets\\Image\\3db76d69-00b7-4a89-8a74-c4cd73a11560.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\483ee9b2-e2ea-4113-be35-cb20ddde74e4.jpg",
+      "PackagePath": "staticwebassets\\Image\\483ee9b2-e2ea-4113-be35-cb20ddde74e4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\4a18cb35-8ded-4ea9-8800-8965c41a8421.png",
+      "PackagePath": "staticwebassets\\Image\\4a18cb35-8ded-4ea9-8800-8965c41a8421.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\4df6b1f6-f30c-4a98-b838-46cb7f5662e2.jpg",
+      "PackagePath": "staticwebassets\\Image\\4df6b1f6-f30c-4a98-b838-46cb7f5662e2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\4ee81ceb-a9c0-498e-a87b-b6f157026794.jpg",
+      "PackagePath": "staticwebassets\\Image\\4ee81ceb-a9c0-498e-a87b-b6f157026794.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\4f514eb9-e8fe-4b1b-b9bb-193e809b1c8d.jpg",
+      "PackagePath": "staticwebassets\\Image\\4f514eb9-e8fe-4b1b-b9bb-193e809b1c8d.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\510d402a-2971-4c88-97d5-ec07cf1cdfe5.jpg",
+      "PackagePath": "staticwebassets\\Image\\510d402a-2971-4c88-97d5-ec07cf1cdfe5.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\5226f4fc-1dab-46a4-acb1-79a7e8b66007.jpg",
+      "PackagePath": "staticwebassets\\Image\\5226f4fc-1dab-46a4-acb1-79a7e8b66007.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\53f3b3df-95b7-4f95-b3a4-c47186e2a2fd.jpg",
+      "PackagePath": "staticwebassets\\Image\\53f3b3df-95b7-4f95-b3a4-c47186e2a2fd.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\5669034f-721e-442b-ab86-dd8f2ad52fc9.jpg",
+      "PackagePath": "staticwebassets\\Image\\5669034f-721e-442b-ab86-dd8f2ad52fc9.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\57e12c78-ad8a-44aa-b2f1-128a1a78e39a.png",
+      "PackagePath": "staticwebassets\\Image\\57e12c78-ad8a-44aa-b2f1-128a1a78e39a.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\59d1475a-9398-461f-9b17-b0c7af82559d.jpg",
+      "PackagePath": "staticwebassets\\Image\\59d1475a-9398-461f-9b17-b0c7af82559d.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\5ecd40ee-51e9-4697-8a45-2cd5474c73fe.png",
+      "PackagePath": "staticwebassets\\Image\\5ecd40ee-51e9-4697-8a45-2cd5474c73fe.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\64b8de62-c305-4a40-bb63-3973071ed17c.png",
+      "PackagePath": "staticwebassets\\Image\\64b8de62-c305-4a40-bb63-3973071ed17c.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\6cf85926-0664-4121-b68a-36c6282e7ed1.jpg",
+      "PackagePath": "staticwebassets\\Image\\6cf85926-0664-4121-b68a-36c6282e7ed1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\6f7b7637-cd7f-47ec-81f5-cf6a48a96c3f.jpg",
+      "PackagePath": "staticwebassets\\Image\\6f7b7637-cd7f-47ec-81f5-cf6a48a96c3f.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\74f59ac6-d361-4d7a-814d-729a4c5ef2d8.jpg",
+      "PackagePath": "staticwebassets\\Image\\74f59ac6-d361-4d7a-814d-729a4c5ef2d8.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\7887bb0c-7e6c-4bfe-9a31-c56d0f884bf5.jpg",
+      "PackagePath": "staticwebassets\\Image\\7887bb0c-7e6c-4bfe-9a31-c56d0f884bf5.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\79cd63d3-c578-4ae9-8c35-6b40e44772d4.png",
+      "PackagePath": "staticwebassets\\Image\\79cd63d3-c578-4ae9-8c35-6b40e44772d4.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\7bf02ec3-ab6a-41bf-aee2-ee2ed1e2a980.jpg",
+      "PackagePath": "staticwebassets\\Image\\7bf02ec3-ab6a-41bf-aee2-ee2ed1e2a980.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\7c7df4da-b6d9-48ec-9da4-bbad02958602.jpg",
+      "PackagePath": "staticwebassets\\Image\\7c7df4da-b6d9-48ec-9da4-bbad02958602.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\7d121623-b354-49f7-998e-7e6d3a86296f.jpg",
+      "PackagePath": "staticwebassets\\Image\\7d121623-b354-49f7-998e-7e6d3a86296f.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\7d2f028e-ab2c-480d-815e-8bbcd3fc2e65.jpg",
+      "PackagePath": "staticwebassets\\Image\\7d2f028e-ab2c-480d-815e-8bbcd3fc2e65.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\7e2ae95b-b7a2-49b0-acdf-a053e4cd6259.png",
+      "PackagePath": "staticwebassets\\Image\\7e2ae95b-b7a2-49b0-acdf-a053e4cd6259.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\7e671af9-7912-4071-a3e7-2747804255e9.jpg",
+      "PackagePath": "staticwebassets\\Image\\7e671af9-7912-4071-a3e7-2747804255e9.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\80b5624a-de5b-460e-8c10-91410891d3cf.jpg",
+      "PackagePath": "staticwebassets\\Image\\80b5624a-de5b-460e-8c10-91410891d3cf.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\80fa0229-6c73-4141-8350-00b3a987964b.png",
+      "PackagePath": "staticwebassets\\Image\\80fa0229-6c73-4141-8350-00b3a987964b.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\8420353d-fc23-4202-b3bf-fce04ac640c7.jpg",
+      "PackagePath": "staticwebassets\\Image\\8420353d-fc23-4202-b3bf-fce04ac640c7.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\84d00376-aadb-4035-a763-ee8eb4c32ddf.png",
+      "PackagePath": "staticwebassets\\Image\\84d00376-aadb-4035-a763-ee8eb4c32ddf.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\88728f4c-e15e-49bd-b2f8-6859ad55a731.jpg",
+      "PackagePath": "staticwebassets\\Image\\88728f4c-e15e-49bd-b2f8-6859ad55a731.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\890abaee-50e0-4033-964f-b32b3b94a6cb.jpg",
+      "PackagePath": "staticwebassets\\Image\\890abaee-50e0-4033-964f-b32b3b94a6cb.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\8c201f61-597b-4de1-aadf-f4051656ca65.jpg",
+      "PackagePath": "staticwebassets\\Image\\8c201f61-597b-4de1-aadf-f4051656ca65.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\8d5a0542-26a7-4815-a2c2-4c797083d202.jpg",
+      "PackagePath": "staticwebassets\\Image\\8d5a0542-26a7-4815-a2c2-4c797083d202.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\8f087d6b-38f2-49d3-a0e4-16238d01f066.jpg",
+      "PackagePath": "staticwebassets\\Image\\8f087d6b-38f2-49d3-a0e4-16238d01f066.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\91f2d69b-b289-44d3-862e-9b67e1ad8204.jpg",
+      "PackagePath": "staticwebassets\\Image\\91f2d69b-b289-44d3-862e-9b67e1ad8204.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\935ebeda-3755-43b3-9ed1-2b0677ef6c53.jpg",
+      "PackagePath": "staticwebassets\\Image\\935ebeda-3755-43b3-9ed1-2b0677ef6c53.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\936a7b86-3dfe-4f29-9237-0081671c90cf.png",
+      "PackagePath": "staticwebassets\\Image\\936a7b86-3dfe-4f29-9237-0081671c90cf.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\944a4b73-3760-4109-b234-7e5532bd27e1.jpg",
+      "PackagePath": "staticwebassets\\Image\\944a4b73-3760-4109-b234-7e5532bd27e1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\94fd18ae-7d2b-4a59-bd92-be125ae8b8f5.jpg",
+      "PackagePath": "staticwebassets\\Image\\94fd18ae-7d2b-4a59-bd92-be125ae8b8f5.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\9787b6a3-b465-447a-82fb-1990b200c072.jpg",
+      "PackagePath": "staticwebassets\\Image\\9787b6a3-b465-447a-82fb-1990b200c072.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\99534f68-49ca-4ecb-82d9-f84811868107.jpg",
+      "PackagePath": "staticwebassets\\Image\\99534f68-49ca-4ecb-82d9-f84811868107.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\9a6d5831-43d3-4f86-8336-c8d158aa6663.jpg",
+      "PackagePath": "staticwebassets\\Image\\9a6d5831-43d3-4f86-8336-c8d158aa6663.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\9b841943-4511-4b98-b736-2842299dabfa.jpg",
+      "PackagePath": "staticwebassets\\Image\\9b841943-4511-4b98-b736-2842299dabfa.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\9d0ed20c-57a5-45a7-82a3-0547998c0bf0.jpg",
+      "PackagePath": "staticwebassets\\Image\\9d0ed20c-57a5-45a7-82a3-0547998c0bf0.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\9fa746cb-5128-4327-881f-36de1b96b86d.jpg",
+      "PackagePath": "staticwebassets\\Image\\9fa746cb-5128-4327-881f-36de1b96b86d.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\a5f29605-29ef-4936-8807-63b88ab2e6aa.jpg",
+      "PackagePath": "staticwebassets\\Image\\a5f29605-29ef-4936-8807-63b88ab2e6aa.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\a61b505e-e8e9-4fa6-9052-79d9c21b6e9e.jpg",
+      "PackagePath": "staticwebassets\\Image\\a61b505e-e8e9-4fa6-9052-79d9c21b6e9e.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\a9f3cec1-5981-4cfd-9436-c2180a8aaf8a.jpg",
+      "PackagePath": "staticwebassets\\Image\\a9f3cec1-5981-4cfd-9436-c2180a8aaf8a.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\ab8350a7-d9d5-475a-9d2c-663cfe835185.jpg",
+      "PackagePath": "staticwebassets\\Image\\ab8350a7-d9d5-475a-9d2c-663cfe835185.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\ade5eb0c-96da-47e4-b94d-cc770175f921.jpg",
+      "PackagePath": "staticwebassets\\Image\\ade5eb0c-96da-47e4-b94d-cc770175f921.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\b0bc5044-ea55-4ec8-921c-a60778ad05d0.jpg",
+      "PackagePath": "staticwebassets\\Image\\b0bc5044-ea55-4ec8-921c-a60778ad05d0.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\b1e9e84c-99c5-4fa0-8d0a-0b1dad460e21.jpg",
+      "PackagePath": "staticwebassets\\Image\\b1e9e84c-99c5-4fa0-8d0a-0b1dad460e21.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\b4bb8a44-9b2f-49a6-8da7-06809689b6be.png",
+      "PackagePath": "staticwebassets\\Image\\b4bb8a44-9b2f-49a6-8da7-06809689b6be.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\b72e6724-5900-4c0e-b553-725db92d3c73.jpg",
+      "PackagePath": "staticwebassets\\Image\\b72e6724-5900-4c0e-b553-725db92d3c73.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\b8128397-77d7-48da-802a-e2132ab33b4c.jpg",
+      "PackagePath": "staticwebassets\\Image\\b8128397-77d7-48da-802a-e2132ab33b4c.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\b8f6c07a-3f43-4ad1-87c1-90f89d9865a4.jpg",
+      "PackagePath": "staticwebassets\\Image\\b8f6c07a-3f43-4ad1-87c1-90f89d9865a4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\b9651ce0-c2ba-4ef8-bbd2-1db6a2620044.jpg",
+      "PackagePath": "staticwebassets\\Image\\b9651ce0-c2ba-4ef8-bbd2-1db6a2620044.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\bd5e4e6c-5a9c-41f3-9287-ecfe1c0ba9ad.jpg",
+      "PackagePath": "staticwebassets\\Image\\bd5e4e6c-5a9c-41f3-9287-ecfe1c0ba9ad.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\bff42a2e-b24f-406d-83e3-274cc689a03a.jpg",
+      "PackagePath": "staticwebassets\\Image\\bff42a2e-b24f-406d-83e3-274cc689a03a.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\c712e382-b0ca-467c-8973-a5437366f029.png",
+      "PackagePath": "staticwebassets\\Image\\c712e382-b0ca-467c-8973-a5437366f029.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\c812d68d-d18c-4365-ae66-932d9a510aee.jpg",
+      "PackagePath": "staticwebassets\\Image\\c812d68d-d18c-4365-ae66-932d9a510aee.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\c855e950-6253-4ccb-91b8-d45ce115fb43.jpg",
+      "PackagePath": "staticwebassets\\Image\\c855e950-6253-4ccb-91b8-d45ce115fb43.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\c943f764-d557-4b03-841a-4b6b8b330163.jpg",
+      "PackagePath": "staticwebassets\\Image\\c943f764-d557-4b03-841a-4b6b8b330163.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\c9750872-73f1-4c6f-8d6f-7740d064ab45.jpg",
+      "PackagePath": "staticwebassets\\Image\\c9750872-73f1-4c6f-8d6f-7740d064ab45.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\caa45025-678d-43ee-bcad-01b3b5ef8a67.jpg",
+      "PackagePath": "staticwebassets\\Image\\caa45025-678d-43ee-bcad-01b3b5ef8a67.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\cce1edfb-10a8-4531-8c1c-0f25965e17fd.jpg",
+      "PackagePath": "staticwebassets\\Image\\cce1edfb-10a8-4531-8c1c-0f25965e17fd.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\cef16a1c-40a6-43da-b934-8c646279a860.jpg",
+      "PackagePath": "staticwebassets\\Image\\cef16a1c-40a6-43da-b934-8c646279a860.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\cf12d62c-8704-41b3-a4dd-be8bb6c14778.jpg",
+      "PackagePath": "staticwebassets\\Image\\cf12d62c-8704-41b3-a4dd-be8bb6c14778.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\cf95a505-0991-4c35-9b56-011a9aadddec.jpg",
+      "PackagePath": "staticwebassets\\Image\\cf95a505-0991-4c35-9b56-011a9aadddec.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\d0d33c5f-196f-4fc0-8fd2-e316f8983e4f.jpg",
+      "PackagePath": "staticwebassets\\Image\\d0d33c5f-196f-4fc0-8fd2-e316f8983e4f.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\d1791226-b46f-423a-aada-2d4ee060c969.jpg",
+      "PackagePath": "staticwebassets\\Image\\d1791226-b46f-423a-aada-2d4ee060c969.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\d5e123d6-c6c3-44de-a36c-3f5200efb812.jpg",
+      "PackagePath": "staticwebassets\\Image\\d5e123d6-c6c3-44de-a36c-3f5200efb812.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\d7cb3062-87e7-4197-bc63-7a104071d454.jpg",
+      "PackagePath": "staticwebassets\\Image\\d7cb3062-87e7-4197-bc63-7a104071d454.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\d950faa7-66ff-4230-9e83-1ec980f7881d.jpg",
+      "PackagePath": "staticwebassets\\Image\\d950faa7-66ff-4230-9e83-1ec980f7881d.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\db3154ac-6b32-414a-b49b-84314a24e65a.jpg",
+      "PackagePath": "staticwebassets\\Image\\db3154ac-6b32-414a-b49b-84314a24e65a.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\dc71a038-4128-4bc1-88a2-a9e55901a51f.jpg",
+      "PackagePath": "staticwebassets\\Image\\dc71a038-4128-4bc1-88a2-a9e55901a51f.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\df2f3cbb-829b-4ed6-9143-b9614f887405.jpg",
+      "PackagePath": "staticwebassets\\Image\\df2f3cbb-829b-4ed6-9143-b9614f887405.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\e37dc89d-b6cf-41ac-a54b-0184b3d23108.jpg",
+      "PackagePath": "staticwebassets\\Image\\e37dc89d-b6cf-41ac-a54b-0184b3d23108.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\e3e6bb58-5882-4ab5-b12b-f1ff4867ce3e.jpg",
+      "PackagePath": "staticwebassets\\Image\\e3e6bb58-5882-4ab5-b12b-f1ff4867ce3e.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\e6c5295d-9226-467e-850f-c27718cfd2f3.jpg",
+      "PackagePath": "staticwebassets\\Image\\e6c5295d-9226-467e-850f-c27718cfd2f3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\e6e75e36-7698-42ca-b85b-2d5cbe75a890.jpg",
+      "PackagePath": "staticwebassets\\Image\\e6e75e36-7698-42ca-b85b-2d5cbe75a890.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\ebbcdb59-70d9-45f3-ab30-5dfc018704e9.jpg",
+      "PackagePath": "staticwebassets\\Image\\ebbcdb59-70d9-45f3-ab30-5dfc018704e9.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\ec848258-83a7-47fb-9dfc-e68ce5c497a1.jpg",
+      "PackagePath": "staticwebassets\\Image\\ec848258-83a7-47fb-9dfc-e68ce5c497a1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\ed1f8d8f-4e36-4b97-a1f1-0e6efa08f55c.jpg",
+      "PackagePath": "staticwebassets\\Image\\ed1f8d8f-4e36-4b97-a1f1-0e6efa08f55c.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\f38a195b-d6c2-4f8f-aff6-82e856fd7c94.jpg",
+      "PackagePath": "staticwebassets\\Image\\f38a195b-d6c2-4f8f-aff6-82e856fd7c94.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\f47848e4-90f1-4554-ad53-0531c3963711.jpg",
+      "PackagePath": "staticwebassets\\Image\\f47848e4-90f1-4554-ad53-0531c3963711.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\fe4a4b54-7490-464e-a327-8ae45b7aa909.jpg",
+      "PackagePath": "staticwebassets\\Image\\fe4a4b54-7490-464e-a327-8ae45b7aa909.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\fe8c9995-03bf-4191-83bf-8e5c0cf1e25f.jpg",
+      "PackagePath": "staticwebassets\\Image\\fe8c9995-03bf-4191-83bf-8e5c0cf1e25f.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ElectronicsStore.BackendApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ElectronicsStore.BackendApi.props",
+      "PackagePath": "build\\ElectronicsStore.BackendApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ElectronicsStore.BackendApi.props",
+      "PackagePath": "buildMultiTargeting\\ElectronicsStore.BackendApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ElectronicsStore.BackendApi.props",
+      "PackagePath": "buildTransitive\\ElectronicsStore.BackendApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

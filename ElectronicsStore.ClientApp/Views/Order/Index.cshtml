@@ -1,0 +1,70 @@
+﻿@using ElectronicsStore.Models.Commons
+@using ElectronicsStore.Models.SaleBills
+
+@model Pagination<SaleBillViewModel>
+@section Category{
+    category-style-2
+}
+@section OrderActive{
+   class="active"
+}
+@section Script{
+    @{
+        if (ViewBag.Notify != null)
+        {
+            <script>alert('@Html.Raw(ViewBag.Notify)')</script>
+            ViewBag.Notify = null;
+        }
+    }
+}
+@{
+    ViewData["Title"] = "Hóa đơn";
+}
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cart-main-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="cart-table table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>@Html.Raw("Mã hóa đơn")</th>
+                                <th>@Html.Raw("Ngày tạo")</th>
+                                <th>@Html.Raw("Trạng thái")</th>
+                                <th>@Html.Raw("Tổng thanh toán")</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var bill in Model.Items)
+                            {
+                                <tr>
+                                    <td>@Html.Raw(bill.Id)</td>
+                                    <td>@Html.Raw(bill.DateCreate)</td>
+                                    <td>@Html.Raw(bill.StatusName)</td>
+                                    <td>@Html.Raw(bill.TotalValue.ToString("N0"))đ</td>
+                                    <td><a href="/Order/GetBillDetails?id=@bill.Id" class="check-btn sqr-btn ">Chi tiết</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    @await Component.InvokeAsync("Pager",Model)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

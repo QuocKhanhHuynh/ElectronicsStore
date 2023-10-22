@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ElectronicsStore.ClientApp.Models.CartItemViewModel>
+@section Category{
+    category-style-2
+}
+@section Script{
+    @{
+        if (ViewBag.Notify != null)
+        {
+            <script>alert('@Html.Raw(ViewBag.Notify)')</script>
+            ViewBag.Notify = null;
+        }
+    }
+}
+@{
+    ViewData["Title"] = "Giỏ hàng";
+}
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart-main-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                
+                <div id="check_count_cart" class="cart-table table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="pro-thumbnail">@Html.Raw("Ảnh")</th>
+                                <th class="pro-title">@Html.Raw("Sản phẩm")</th>
+                                <th class="pro-price">@Html.Raw("Giá")</th>
+                                <th class="pro-quantity">@Html.Raw("Số lượng")</th>
+                                <th class="pro-subtotal">@Html.Raw("Tổng")</th>
+                                <th class="pro-remove">@Html.Raw("Xóa")</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list_cart">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5 ml-auto">
+       
+                <div id="checkout_cart" class="cart-calculator-wrapper">
+                    <div class="cart-calculate-items">
+                        <h3>Tổng thanh toán: <span id="number_total"></span></h3>
+                    <a asp-action="Checkout" asp-controller="Order" class="sqr-btn d-block">Đặt hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script id="tmpl_load_cart" type="x-tmpl-mustache">
+    <tr>
+        <td class="pro-thumbnail">
+            <a href="/Product/GetProductDetail?id={{id}}">
+                <img width="120px" class="img-fluid" src="{{image}}" />
+            </a>
+        </td>
+        <td class="pro-title"><a href="/Product/GetProductDetail?id={{id}}">{{name}}</a></td>
+        <td class="pro-price"><span>{{price}}</span></td>
+        <td class="pro-quantity">
+        <button style="border: none" class="btn-minus" data-id="{{id}}"><i class="fa fa-minus-circle"></i></button>
+            <input type="number" size="2" class="ipt-quan" data-id="{{id}}" id="txt_quantity_{{id}}" value="{{quanlity}}">
+        <button style="border: none; color: none" class="btn-plus" data-id="{{id}}"><i class="fa fa-plus-circle"></i></button>
+        </td>
+        <td class="pro-subtotal"><span>{{total}}</span></td>
+        <td class="pro-remove">
+            <button style="width:20px !important; border: none" class="btn-remove" data-id="{{id}}"><i class="fa fa-trash-o"></i></button>
+        </td>
+    </tr>
+</script>
+<!--
+    <i class="fa fa-minus-circle" aria-hidden="true"></i>
+    <input type="text" id="txt_quantity_{{id}}" value="{{quanlity}}" />
+            <button style="width:35px !important; heigh:35px !important; border: none" class="btn-minus" data-id="{{id}}"><i style="color: red" class="fa-solid fa-circle-minus"></i></button>
+            <input size="2" type="text" style="margin:auto" id="txt_quantity_{{id}}" value="{{quanlity}}">
+            <button style="border: none; color: none" class="btn-plus" data-id="{{id}}"><i style="color: green" class="fa-solid fa-circle-plus"></i></button>
+-->

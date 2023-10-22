@@ -1,0 +1,113 @@
+﻿@model ElectronicsStore.AdminApp.Models.Home.HomeViewModel
+
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+@section Script{
+    @if (ViewBag.Success != null)
+    {
+        <script>alert('@Html.Raw(ViewBag.Success)')</script>
+        ViewBag.Success = null;
+    }
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Trang chủ</h1>
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <form asp-action="Index" asp-controller="Home" method="get">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <input type="text" value="@Model.Id" name="id" class="form-control" placeholder="Nhập mã hóa đơn" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select name="statusId" asp-items="@Model.Statuses" class="form-control">
+                                                <option value=@null>Trạng thái</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="submit" class="btn btn-primary">Tìm</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <hr />
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.Raw("Mã hóa đơn")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Ngày tạo")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Tổng giá trị")
+                                    </th>
+                                    <th>
+                                        @Html.Raw("Trạng thái")
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    var list = new List<List<SelectListItem>>();
+                                    int index = 0;
+                                }
+                                @foreach (var item in Model.Bills.Items)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Id)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DateCreate)
+                                        </td>
+                                        <td>
+                                            @Html.Raw(item.TotalValue.ToString("N0") + "đ")
+                                        </td>
+                                        <td>
+                                            <form asp-action="UpdateBill" asp-controller="Home" method="get">
+                                                <input type="hidden" value="@item.Id" name="id" />
+                                                <div>
+                                                    @{
+                                                        var temp = new List<SelectListItem>();
+                                                        foreach (var i in Model.StatuRecord)
+                                                        {
+                                                            temp.Add(new SelectListItem()
+                                                            {
+                                                                Text = i.Text,
+                                                                Value = i.Value,
+                                                                Selected = item.StatusId.ToString().Equals(i.Value)
+                                                            });
+                                                        }
+                                                        list.Add(temp);
+                                                    }
+                                                    <select onchange="this.form.submit()" name="statusId" asp-items="@list[index]">
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Chi tiết", "GetDetail", new { item.Id, item.StatusId })
+                                        </td>
+                                    </tr>
+                                    index++;
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            @await Component.InvokeAsync("Pager",Model.Bills)
+        </div>
+    </div>
+</div>

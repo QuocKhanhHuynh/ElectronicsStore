@@ -1,0 +1,57 @@
+﻿@model ElectronicsStore.Models.Users.AccountRegisterRequest
+
+@section Category{
+    category-style-2
+}
+
+@{
+    ViewData["Title"] = "Đăng ký tài khoản";
+}
+
+<div class="login-register-wrapper">
+    <div class="container">
+        <div class="member-area-from-wrap">
+            <div class="row">
+                <div style="margin-left: auto; margin-right: auto;" class="col-lg-6">
+                    <div class="login-reg-form-wrap mt-md-34 mt-sm-34">
+                        <h2>Đăng ký tài khoản</h2>
+                        <form asp-action="RegisterAccount" asp-controller="Account" method="post">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <input type="hidden" asp-for="RoleId" value="CLIENT" />
+                            <div class="single-input-item">
+                                <input asp-for="UserName" placeholder="Nhập Username" required />
+                            </div>
+                            <div class="single-input-item">
+                                <input asp-for="FullName" placeholder="Nhập họ tên" required />
+                            </div>
+                            <div class="single-input-item">
+                                <input asp-for="Email" placeholder="Nhập email" required />
+                            </div>
+                            <div class="single-input-item">
+                                <input asp-for="PhoneNumber" placeholder="Nhập số điện thoại" required />
+                            </div>
+                            <div class="single-input-item">
+                                <input asp-for="Address" placeholder="Nhập địa chỉ" required />
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="single-input-item">
+                                        <input asp-for="Password" placeholder="Nhập mật khẩu" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single-input-item">
+                                        <input asp-for="ConfirmPassword" placeholder="Xác nhận mật khẩu" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-input-item">
+                                <button class="sqr-btn">Đăng ký</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

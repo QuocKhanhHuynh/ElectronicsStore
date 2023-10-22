@@ -1,0 +1,809 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ElectronicsStore.ClientApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ElectronicsStore.ClientApp.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\helper.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\helper.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\assets\\css\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\assets\\css\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\assets\\css\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\assets\\css\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\assets\\css\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\assets\\css\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\plugins.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\skin-default.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skin-default.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.woff2"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\about\\about.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\about\\avatar.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\avatar.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\about\\services.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\services.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_left.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_left.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_left2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_left2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_shop.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_shop.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static_top1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static_top1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static_top2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static_top2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static_top3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static_top3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static_top4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static_top4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static_top5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static_top5.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\banner_static_top6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_static_top6.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\home3_static5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\home3_static5.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\home3_static6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\home3_static6.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\home3_static7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\home3_static7.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\banner\\home3_static8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\home3_static8.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-img\\01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-img\\01.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-img\\02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-img\\02.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-img\\03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-img\\03.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-img\\04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-img\\04.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-img\\05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-img\\05.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-img\\06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-img\\06.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-pettern\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-pettern\\1.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-pettern\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-pettern\\2.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-pettern\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-pettern\\3.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-pettern\\4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-pettern\\4.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-pettern\\5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-pettern\\5.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\bg-panel\\bg-pettern\\6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-panel\\bg-pettern\\6.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\blog\\comment-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment-icon.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\blog\\img_blog1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\img_blog1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\blog\\img_blog2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\img_blog2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\blog\\img_blog3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\img_blog3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\blog\\img_blog4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\img_blog4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\brand\\br1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\br1.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\brand\\br2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\br2.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\brand\\br3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\br3.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\brand\\br4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\br4.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\brand\\br5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\br5.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\brand\\br6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\br6.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\cart\\cart-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\cart\\cart-1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\cart\\cart-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\cart\\cart-2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.ico"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\leaflet\\layers-2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\leaflet\\layers-2x.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\leaflet\\layers.png",
+      "PackagePath": "staticwebassets\\assets\\img\\leaflet\\layers.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\leaflet\\marker-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\leaflet\\marker-icon.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\payment.png",
+      "PackagePath": "staticwebassets\\assets\\img\\payment.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\paypal-card.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\paypal-card.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-b-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-b-1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-b-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-b-2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-b-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-b-3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-b-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-b-4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-details-img1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-details-img1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-details-img2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-details-img2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-details-img3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-details-img3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-details-img4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-details-img4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-details-img5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-details-img5.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-f-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-f-1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-f-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-f-2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-f-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-f-3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-f-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-f-4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img10.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img11.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img12.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img13.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img14.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img15.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img15.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img16.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img16.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img5.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img6.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img7.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img8.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-img9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-img9.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-s-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-s-1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-s-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-s-2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-s-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-s-3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-s-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-s-4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-s-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-s-5.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\product\\product-s-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product-s-6.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider11_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider11_bg.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider11_lable1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider11_lable1.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider11_lable2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider11_lable2.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider11_lable3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider11_lable3.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider11_lable4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider11_lable4.png"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider12_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider12_bg.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider21_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider21_bg.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider22_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider22_bg.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider3_bg1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider3_bg1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider3_bg2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider3_bg2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider4_bg1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider4_bg1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\slider\\slider4_bg2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider4_bg2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\team\\team_member_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_member_1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\team\\team_member_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_member_2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\team\\team_member_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_member_3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\team\\team_member_4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team_member_4.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\testimonial\\team_member1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\team_member1.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\testimonial\\team_member2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\team_member2.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\testimonial\\team_member3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\team_member3.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\img\\testimonial\\testimonials_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\testimonials_bg.jpg"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\js\\ajax-mail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ajax-mail.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\js\\switcher.js",
+      "PackagePath": "staticwebassets\\assets\\js\\switcher.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\js\\vendor\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\js\\vendor\\modernizr-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-3.6.0.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\assets\\js\\vendor\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\popper.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.ClientApp\\wwwroot\\lib\\mustache.js",
+      "PackagePath": "staticwebassets\\lib\\mustache.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ElectronicsStore.ClientApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ElectronicsStore.ClientApp.props",
+      "PackagePath": "build\\ElectronicsStore.ClientApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ElectronicsStore.ClientApp.props",
+      "PackagePath": "buildMultiTargeting\\ElectronicsStore.ClientApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ElectronicsStore.ClientApp.props",
+      "PackagePath": "buildTransitive\\ElectronicsStore.ClientApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

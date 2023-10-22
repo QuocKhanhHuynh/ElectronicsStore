@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ElectronicsStore.AdminApp.Models.Import.ImportItemViewModel>
+
+@{
+    ViewData["Title"] = "Danh sách hàng nhập";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Danh sách hàng nhập</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Danh sách hàng nhập</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="CreateImportBill" asp-controller="Import">Tạo hóa đơn nhập </a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Image)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Id)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Name)
+                                </th>
+                                <th>
+                                    @Html.Raw("Xóa")
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="list_items">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="tmpl_load_cart" type="x-tmpl-mustache">
+    <tr>
+        <td>
+            <img width="120" src="{{image}}">
+        </td>
+        <td>
+            {{id}}
+        </td>
+        <td>
+            {{name}}
+        </td>
+        <td class="shoping__cart__item__close">
+            <button style="border: none" class="btn-remove" data-id="{{id}}"><i class="fa-solid fa-circle-xmark"></i></button>
+        </td>
+    </tr>
+</script>

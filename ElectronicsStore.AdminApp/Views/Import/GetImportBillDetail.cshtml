@@ -1,0 +1,63 @@
+﻿@model List<ElectronicsStore.Models.ImportBills.ImportBillDetailViewModel>
+@inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
+
+@{
+    ViewData["Title"] = "Chi tiết hóa đơn nhập";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Chi tiết hóa đơn nhập</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Import">Danh sách hóa đơn nhập</a></li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="Index" asp-controller="Import">Về danh sách hóa đơn nhập</a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.Raw("Ảnh")
+                                </th>
+                                <th>
+                                    @Html.Raw("Tên sản phẩm")
+                                </th>
+                                <th>
+                                    @Html.Raw("Số lượng")
+                                </th>
+                                <th>
+                                    @Html.Raw("Giá nhập")
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <img width="120" src="@($"{_configuration["BaseAddress"]}/Image/{item.Image}")">
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProductName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Quanlity)
+                                    </td>
+                                    <td>
+                                        @Html.Raw(item.ImportPrice.ToString("N0") + "đ")
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+﻿@using ElectronicsStore.Models.Categories
+@model List<CategoryViewModel>
+
+<ul>
+    @foreach(var category in Model){
+        <li><a href="/product/index?categoryId=@category.Id">@Html.Raw(category.Name)</a></li>
+    }
+</ul>
