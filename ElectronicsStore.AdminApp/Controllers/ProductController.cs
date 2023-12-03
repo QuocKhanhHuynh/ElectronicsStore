@@ -196,24 +196,32 @@ namespace ElectronicsStore.AdminApp.Controllers
             return RedirectToAction("GetBrandPagination");
         }
 
-        public async Task<IActionResult> Index(string? keyword, int? categoryId, int pageIndex = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(string? keyword, int? categoryId, int? brandId, int pageIndex = 1, int pageSize = 10)
         {
             if (TempData["Success"] != null)
             {
                 ViewBag.Success = TempData["Success"];
             }
             var categoryList = await _categoryApiService.GetCategories();
+            var brandList = await _brandApiService.GetBrands();
             var categories = categoryList.ObjectResult.Select(x => new SelectListItem()
             {
                 Text = x.Name,
                 Value = x.Id.ToString(),
                 Selected = categoryId.HasValue && x.Id == categoryId
             });
-            var productPagination = await _productApiService.GetProductInformation(keyword, categoryId, pageIndex, pageSize);
+            var brands = brandList.ObjectResult.Select(x => new SelectListItem()
+            {
+                Text = x.Name,
+                Value = x.Id.ToString(),
+                Selected = brandId.HasValue && x.Id == brandId
+            });
+            var productPagination = await _productApiService.GetProductInformation(keyword, categoryId, brandId, pageIndex, pageSize);
             var model = new ProductsViewModel()
             {
                 Keyword = keyword,
                 Categories = categories,
+                Brands = brands,
                 Products = productPagination.ObjectResult
             };
             return View(model);

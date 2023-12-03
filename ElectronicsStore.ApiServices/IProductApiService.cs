@@ -17,9 +17,9 @@ namespace ElectronicsStore.ApiServices
         Task<ApiResponse<bool>> UpdateProduct(ProductUpdateRequest request);
         Task<ApiResponse<bool>> DeleteProduct(int id);
         Task<ApiResponse<List<ProductQuickViewModel>>> Getproducts();
-        Task<ApiResponse<Pagination<ProductQuickViewModel>>> GetProductPagination(string? keyword, int? categoryId, int pageIndex, int pageSize);
+        Task<ApiResponse<Pagination<ProductQuickViewModel>>> GetProductPagination(string? keyword, int? categoryId, int? brandId, int pageIndex, int pageSize);
         Task<ApiResponse<ProductViewModel>> GetProductDetail(int id);
-        Task<ApiResponse<Pagination<ProductBaseViewModel>>> GetProductInformation(string? keyword, int? categoryId, int pageIndex, int pageSize);
+        Task<ApiResponse<Pagination<ProductBaseViewModel>>> GetProductInformation(string? keyword, int? categoryId, int? brandId, int pageIndex, int pageSize);
         Task<ApiResponse<Pagination<ProductBaseViewModel>>> GetSoldoutProduct(int pageIndex, int pageSize);
         Task<ApiResponseSuccess<ProductViewModel>> GetDetailInformation(int id);
     }

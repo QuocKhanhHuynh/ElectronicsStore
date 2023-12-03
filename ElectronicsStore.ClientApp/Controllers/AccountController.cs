@@ -169,7 +169,8 @@ namespace ElectronicsStore.ClientApp.Controllers
             {
                 Email = user.ObjectResult.Email,
                 FullName = user.ObjectResult.FullName,
-                PhoneNumber = user.ObjectResult.PhoneNumber
+                PhoneNumber = user.ObjectResult.PhoneNumber,
+                Address = user.ObjectResult.Address
             };
             return View(request);
         }

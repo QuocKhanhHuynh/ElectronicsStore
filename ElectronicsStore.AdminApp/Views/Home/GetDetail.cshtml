@@ -5,6 +5,66 @@
     ViewData["Title"] = "Chi tiết hóa đơn bán hàng";
 }
 
+@{
+    var content = "";
+    content += " <html lang=\"en\">";
+    content += "             <head> ";
+    content += "<meta charset=\"utf-8\" />";
+    content += " <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />";
+    content += " <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />";
+    content += "<meta name=\"description\" content=\"\" />";
+    content += " <meta name=\"author\" content=\"\" />";
+    content += " <link href=\"https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css\" rel=\"stylesheet\" />";
+    content += " <link href=\"/css/styles.css\" rel=\"stylesheet\" />";
+    content += " <script src=\"https://use.fontawesome.com/releases/v6.1.0/js/all.js\" crossorigin=\"anonymous\"></script>";
+    content += " </head>";
+    content += "<body class=\"sb-nav-fixed\">";
+    content += "<div id=\"layoutSidenav\">";
+    content += " <div id=\"layoutSidenav_content\">";
+    content += " <main>";
+    content += "<div class=\"container-fluid px-4\">";
+    content += "<div class=\"card mb-4\">";
+    content += "<div class=\"card-body\">";
+    content += " <div class=\"col-md-12\">";
+    content += " <div>";
+    content += "<dl class=\"row\">";
+    content += "<dt class=\"col-sm-2\">Mã hóa đơn</dt>";
+    content += " <dd class=\"col-sm-10\">" + @Model.Id + "</dd>";
+    content += " <dt class=\"col-sm-2\"> Ngày tạo</dt>";
+    content += "<dd class=\"col-sm-10\">" + @Model.DateCreate + "</dd>";
+    content += "<dt class=\"col-sm-2\">Tổng giá trị</dt>";
+    content += " <dd class=\"col-sm-10\">" + @Model.TotalValue.ToString("N0") + "đ </dd>";
+    content += "<dt class=\"col-sm-2\">Nguời nhận</dt>";
+    content += "<dd class=\"col-sm-10\">" + @Model.RecipientName + " </dd>";
+    content += " <dt class=\"col-sm-2\">Địa chỉ</dt>";
+    content += "<dd class=\"col-sm-10\">" + @Model.Address + "</dd>";
+    content += "<dt class=\"col-sm-2\">Số điện thoại</dt>";
+    content += "<dd class=\"col-sm-10\">" + @Model.PhoneNumber + "</dd>";
+    content += "</dl>";
+    content += "</div>";
+    content += "</div>";
+    content += "<hr />";
+    content += "<h4>Sản phẩm</h4>";
+    content += "<hr />";
+    content += "<div class=\"row\">";
+    content += "<div class=\"col-md-12\">";
+    content += "<table class=\"table\">";
+    content += "<thead>";
+    content += "<tr>";
+    content += "<th> Mã sản phẩm</th><th>Tên sản phẩm</th><th>Số lượng</th><th>Giá bán</th><th>Tổng giá</th></tr></thead><tbody>";
+    foreach (var item in Model.Details)
+    {
+        content += "<tr>";
+        content += "<td>" + item.ProductId + "</td>";
+        content += "<td>" + item.ProductName + "</td>";
+        content += "<td>" + item.Quanlity.ToString("N0") + "</td>";
+        content += "<td>" + item.SalePrice.ToString("N0") + "đ</td>";
+        content += "<td>" + (item.SalePrice * item.Quanlity).ToString("N0") + "đ</td>";
+        content += "</ tr >";
+    }
+    content += "</tbody></table></div></div></div></div></div></main></div></div></body></html>";
+}
+
 <div class="container-fluid px-4">
     <h1 class="mt-4">Chi tiết hóa đơn</h1>
     <ol class="breadcrumb mb-4">
@@ -126,5 +186,138 @@
                 </div>
             </form>
         </div>
+        <div class="card-header">
+            <!--<a class="btn btn-success" href="/Home/UpdateBill?id=(ViewBag.BillId)&statusId=(ViewBag.StatusId + 1)">Cập nhật trạng thái</a>-->
+            <form asp-action="GeneratePdf" asp-controller="Home" method="post">
+                <input type="hidden" value="@content" name="content" />
+                <input type="hidden" value="@Model.Id" name="billId" />
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary">Xuất hóa đơn</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
+
+
+<!--
+    <html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="col-md-12">
+                                <div>
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                           Mã hóa đơn
+                                        </dt>
+                                        <dd class="col-sm-10">
+Model.Id
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            Ngày tạo
+                                        </dt>
+                                        <dd class="col-sm-10">
+Model.DateCreate
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            Tổng giá trị
+                                        </dt>
+                                        <dd class="col-sm-10">
+Model.TotalValue.ToString("N0") đ
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            Nguời nhận
+                                        </dt>
+                                        <dd class="col-sm-10">
+Model.RecipientName
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            Địa chỉ
+                                        </dt>
+                                        <dd class="col-sm-10">
+Model.Address
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            Số điện thoại
+                                        </dt>
+                                        <dd class="col-sm-10">
+Model.PhoneNumber
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <hr />
+                            <h4>Sản phẩm</h4>
+                            <hr />
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Mã sản phẩm"
+                                                </th>
+                                                <th>
+                                                    Tên sản phẩm
+                                                </th>
+                                                <th>
+                                                    Số lượng
+                                                </th>
+                                                <th>
+                                                    Giá bán
+                                                </th>
+                                                <th>
+                                                    Tổng giá
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+foreach (var item in Model.Details)
+{
+                                                    <tr>
+                                                        <td>
+            item.ProductId
+                                                        </td>
+                                                        <td>
+            item.ProductName
+                                                        </td>
+                                                        <td>
+            item.Quanlity.ToString("N0")
+                                                        </td>
+                                                        <td>
+            item.SalePrice.ToString("N0") + đ
+                                                        </td>
+                                                        <td>
+            ((item.SalePrice * item.Quanlity).ToString("N0")) đ
+                                                        </td>
+                                                    </tr>
+}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
+
+-->

@@ -36,24 +36,28 @@
                             <div class="single-input-item">
                                 <div class="login-reg-form-meta d-flex align-items-center justify-content-between">
                                     <div class="remember-meta">
-                                        <div class="custom-control custom-checkbox">
+                                        <a asp-action="ForgetPassword" asp-controller="Account">Quên mật khẩu?</a>
+                                        <!--<div class="custom-control custom-checkbox">
                                             <input asp-for="Remember" type="checkbox" class="custom-control-input" id="rememberMe">
                                             <label class="custom-control-label" for="rememberMe">Ghi nhớ tôi</label>
-                                        </div>
+                                        </div> -->
+                                        
+                                        <input asp-for="Remember" type="hidden" class="custom-control-input" id="rememberMe" value="@false">
                                     </div>
-                                    <a asp-action="ForgetPassword" asp-controller="Account">Quên mật khẩu?</a>
+                                    <a asp-action="RegisterAccount" asp-controller="Account">Chưa có tài khoản?</a>
                                 </div>
                             </div>
                             <div class="single-input-item">
                                 <button class="sqr-btn">Đăng nhập</button>
                             </div>
                         </form>
-                        <div class="single-input-item">
-                            <div class="login-reg-form-meta d-flex align-items-center justify-content-between">
-                                <a asp-action="RegisterAccount" asp-controller="Account">Chưa có tài khoản?</a>
+                        <!-- <div class="single-input-item">
+                                <div class="login-reg-form-meta d-flex align-items-center justify-content-between">
+                                    <a asp-action="RegisterAccount" asp-controller="Account">Chưa có tài khoản?</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+                        
                 </div>
                 <!-- Login Content End -->
             </div>

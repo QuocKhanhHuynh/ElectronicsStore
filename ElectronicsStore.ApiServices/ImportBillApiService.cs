@@ -41,13 +41,13 @@ namespace ElectronicsStore.ApiServices
             return JsonConvert.DeserializeObject<ApiResponseFailure<bool>>(await response.Content.ReadAsStringAsync());
         }
 
-        public async Task<ApiResponse<List<ImportBillDetailViewModel>>> GetImportBillDetail(int id)
+        public async Task<ApiResponse<ImportBillDetailViewModel>> GetImportBillDetail(int id)
         {
             var httpClient = _httpContextFactory.CreateClient();
             httpClient.BaseAddress = new Uri(_configuration["BaseAddress"]);
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _httpContextAccessor.HttpContext.Session.GetString("Token"));
             var response = await httpClient.GetAsync($"/api/ImportBills/{id}");
-            return JsonConvert.DeserializeObject<ApiResponseSuccess<List<ImportBillDetailViewModel>>>(await response.Content.ReadAsStringAsync());
+            return JsonConvert.DeserializeObject<ApiResponseSuccess<ImportBillDetailViewModel>>(await response.Content.ReadAsStringAsync());
         }
         public async Task<ApiResponse<Pagination<ImportBillViewModel>>> GetImportBills(int? id, string? userId, int pageIndex, int pageSize)
         {

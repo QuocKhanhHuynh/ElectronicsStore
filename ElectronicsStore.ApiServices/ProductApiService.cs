@@ -90,22 +90,24 @@ namespace ElectronicsStore.ApiServices
             return JsonConvert.DeserializeObject<ApiResponseSuccess<ProductViewModel>>(await response.Content.ReadAsStringAsync());
         }
 
-        public async Task<ApiResponse<Pagination<ProductBaseViewModel>>> GetProductInformation(string? keyword, int? categoryId, int pageIndex, int pageSize)
+        public async Task<ApiResponse<Pagination<ProductBaseViewModel>>> GetProductInformation(string? keyword, int? categoryId, int? brandId, int pageIndex, int pageSize)
         {
             var httpClient = _httpContextFactory.CreateClient();
             httpClient.BaseAddress = new Uri(_configuration["BaseAddress"]);
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _httpContextAccessor.HttpContext.Session.GetString("Token"));
-            var response = await httpClient.GetAsync($"/api/products/Information?keyword={keyword}&categoryId={categoryId}&pageIndex={pageIndex}&pageSize={pageSize}");
+            var response = await httpClient.GetAsync($"/api/products/Information?keyword={keyword}&categoryId={categoryId}&brandId={brandId}&pageIndex={pageIndex}&pageSize={pageSize}");
             return JsonConvert.DeserializeObject<ApiResponseSuccess<Pagination<ProductBaseViewModel>>>(await response.Content.ReadAsStringAsync());
         }
-        public async Task<ApiResponse<Pagination<ProductQuickViewModel>>> GetProductPagination(string? keyword, int? categoryId, int pageIndex, int pageSize)
+
+        public async Task<ApiResponse<Pagination<ProductQuickViewModel>>> GetProductPagination(string? keyword, int? categoryId, int? brandId, int pageIndex, int pageSize)
         {
             var httpClient = _httpContextFactory.CreateClient();
             httpClient.BaseAddress = new Uri(_configuration["BaseAddress"]);
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _httpContextAccessor.HttpContext.Session.GetString("Token"));
-            var response = await httpClient.GetAsync($"/api/products/Pagination?keyword={keyword}&categoryId={categoryId}&pageIndex={pageIndex}&pageSize={pageSize}");
+            var response = await httpClient.GetAsync($"/api/products/Pagination?keyword={keyword}&categoryId={categoryId}&brandId={brandId}&pageIndex={pageIndex}&pageSize={pageSize}");
             return JsonConvert.DeserializeObject<ApiResponseSuccess<Pagination<ProductQuickViewModel>>>(await response.Content.ReadAsStringAsync());
         }
+
 
         public async Task<ApiResponse<List<ProductQuickViewModel>>> Getproducts()
         {

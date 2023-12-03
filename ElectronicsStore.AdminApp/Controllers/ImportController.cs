@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
+using SelectPdf;
 using static Microsoft.ApplicationInsights.MetricDimensionNames.TelemetryContext;
 using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 
@@ -232,7 +233,7 @@ namespace ElectronicsStore.AdminApp.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProductNotSoldout(int pageIndex = 1, int pageSize = 10)
         {
-            var products = await _productApiService.GetProductPagination(null,null,pageIndex, pageSize);
+            var products = await _productApiService.GetProductPagination(null,null,null,pageIndex, pageSize);
             return View(products.ObjectResult);
         }
 
@@ -302,6 +303,17 @@ namespace ElectronicsStore.AdminApp.Controllers
         {
             var bill = await _importBillApiService.GetImportBillDetail(id);
             return View(bill.ObjectResult);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> GeneratePdf(string content, int billId)
+        {
+            var converter = new HtmlToPdf();
+            var document = converter.ConvertHtmlString(content);
+            byte[] pdfBytes = document.Save();
+            document.Close();
+            return File(pdfBytes, "application/pdf", "ImportBill" + billId + ".pdf");
+
         }
     }
 }

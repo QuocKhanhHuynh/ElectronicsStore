@@ -15,10 +15,10 @@ namespace ElectronicsStore.ClientApp.Controllers
             _productApiService = productApiService;
         }
 
-        public async Task<IActionResult> Index(string? keyword, int? categoryId, int pageIndex = 1, int pageSize = 16)
+        public async Task<IActionResult> Index(string? keyword, int? categoryId, int? brandId, int pageIndex = 1, int pageSize = 16)
         {
             ViewBag.Keyword = keyword;
-            var productPagination = await _productApiService.GetProductPagination(keyword, categoryId, pageIndex, pageSize);
+            var productPagination = await _productApiService.GetProductPagination(keyword, categoryId, brandId, pageIndex, pageSize);
             Helper.LimitNameLength(productPagination.ObjectResult.Items);
             return View(productPagination.ObjectResult);
         }

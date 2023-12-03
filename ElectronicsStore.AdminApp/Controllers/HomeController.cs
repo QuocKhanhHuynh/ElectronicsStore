@@ -4,6 +4,7 @@ using ElectronicsStore.Models.SaleBills;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using SelectPdf;
 
 namespace ElectronicsStore.AdminApp.Controllers
 {
@@ -81,6 +82,17 @@ namespace ElectronicsStore.AdminApp.Controllers
                 TempData["Success"] = $"Cập nhật trạng thái hóa đơn {id} thất bại";
                 return RedirectToAction("Index");
             }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> GeneratePdf(string content, int billId)
+        {
+             var converter = new HtmlToPdf();
+             var document = converter.ConvertHtmlString(content);
+             byte[] pdfBytes = document.Save();
+             document.Close();
+             return File(pdfBytes, "application/pdf", "SaleBill" + billId+ ".pdf");
+
         }
     }
 }

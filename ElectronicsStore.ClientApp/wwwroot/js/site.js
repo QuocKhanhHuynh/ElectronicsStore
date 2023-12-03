@@ -36,7 +36,7 @@
                             id: item.id,
                             name: item.name,
                             quanlity: item.quanlity,
-                            price: item.price,
+                            price: item.price.toLocaleString('vi-VN') + 'đ',
                             total: '' + (item.price * item.quanlity).toLocaleString('vi-VN') + 'đ'
                         });
                         totalCart += item.price * item.quanlity;

@@ -7,7 +7,7 @@
     @foreach(var brand in Model)
     {
      <div class="brand-item text-center">
-        <a href="#"><img height="70px" width="150px" src="@($"{_configuration["BaseAddress"]}/Image/{brand.Logo}")" alt=""></a>
+        <a href=@($"../product/index?brandId={brand.Id}")><img height="70px" width="150px" src="@($"{_configuration["BaseAddress"]}/Image/{brand.Logo}")" alt=""></a>
     </div>
     }
 </div>

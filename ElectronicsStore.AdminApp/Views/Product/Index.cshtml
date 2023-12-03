@@ -32,12 +32,17 @@
                             <div class="col-md-6 col-xs-12">
                                 <form asp-action="Index" asp-controller="Product" method="get">
                                     <div class="row">
-                                        <div class="col-md-5">
+                                        <div class="col-md-4">
                                             <input type="text" value="@Model.Keyword" name="keyword" class="form-control" placeholder="Nhập từ khóa" />
                                         </div>
                                         <div class="col-md-3">
                                             <select name="categoryId" asp-items="@Model.Categories" class="form-control">
                                                 <option value=@null>Loại hàng</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select name="brandId" asp-items="@Model.Brands" class="form-control">
+                                                <option value=@null>Nhãn hiệu</option>
                                             </select>
                                         </div>
                                         <div class="col-md-2">

@@ -9,6 +9,7 @@ namespace ElectronicsStore.AdminApp.Models.Product
     {
         public Pagination<ProductBaseViewModel> Products { get; set; }
         public IEnumerable<SelectListItem> Categories { get; set; }
+        public IEnumerable<SelectListItem> Brands { get; set; }
         public string Keyword { get; set; }
     }
 }

@@ -186,7 +186,7 @@ namespace ElectronicsStore.BackendApi.Controllers
         }
       
         [HttpGet("Pagination")]
-        public async Task<IActionResult> GetProductsPagination(string? keyword, int? categoryId, int pageIndex, int pageSize)
+        public async Task<IActionResult> GetProductsPagination(string? keyword, int? categoryId, int? brandId, int pageIndex, int pageSize)
         {
             var query = from p in _context.Products
                         join c in _context.Categories on p.CategoryId equals c.Id
@@ -202,6 +202,10 @@ namespace ElectronicsStore.BackendApi.Controllers
             if (categoryId.HasValue)
             {
                 query = query.Where(x => x.p.CategoryId == categoryId);
+            }
+            if (brandId.HasValue)
+            {
+                query = query.Where(x => x.b.Id == brandId);
             }
             var totalItem = query.Count();
             var items = await query.Skip((pageIndex - 1) * pageSize).Take(pageSize).Select(x => new ProductQuickViewModel()
@@ -229,7 +233,7 @@ namespace ElectronicsStore.BackendApi.Controllers
 
         [HttpGet("Information")]
         [Authorize(Policy = "auth1")]
-        public async Task<IActionResult> GetProductsInformation(string? keyword, int? categoryId, int pageIndex, int pageSize)
+        public async Task<IActionResult> GetProductsInformation(string? keyword, int? categoryId, int? brandId, int pageIndex, int pageSize)
         {
             var query = from p in _context.Products
                         join c in _context.Categories on p.CategoryId equals c.Id
@@ -245,6 +249,10 @@ namespace ElectronicsStore.BackendApi.Controllers
             if (categoryId.HasValue)
             {
                 query = query.Where(x => x.p.CategoryId == categoryId);
+            }
+            if (brandId.HasValue)
+            {
+                query = query.Where(x => x.b.Id == brandId);
             }
             var totalItem = query.Count();
             var items = await query.Skip((pageIndex - 1) * pageSize).Take(pageSize).Select(x => new ProductBaseViewModel()

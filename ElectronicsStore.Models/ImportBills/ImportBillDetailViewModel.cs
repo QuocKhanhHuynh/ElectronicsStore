@@ -10,13 +10,16 @@ namespace ElectronicsStore.Models.ImportBills
 {
     public class ImportBillDetailViewModel
     {
-        [Display(Name = "Tên sản phẩm")]
-        public string ProductName { get; set; }
-        [Display(Name = "Ảnh")]
-        public string Image { get; set; }
-        [Display(Name = "Số lượng")]
-        public int Quanlity { get; set; }
-        [Display(Name = "Giá bán")]
-        public int ImportPrice { get; set; }
+        [Display(Name = "Mã hóa đơn")]
+        public int Id { get; set; }
+        [Display(Name = "Ngày lập")]
+        public DateTime Datecreate { get; set; }
+        [Display(Name = "Nhà cung cấp")]
+        public string SupplierName { get; set; }
+        [Display(Name = "Người lập")]
+        public string UserName { get; set; }
+        [Display(Name = "Tổng giá trị")]
+        public int TotalValue { get; set; }
+        public List<ImportBillDetailModel> Details { get; set; }
     }
 }

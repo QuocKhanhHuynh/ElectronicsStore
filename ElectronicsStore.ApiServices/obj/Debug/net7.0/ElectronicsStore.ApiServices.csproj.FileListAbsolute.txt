@@ -2,6 +2,7 @@ D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\Electroni
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\ElectronicsStore.BackendApi.runtimeconfig.json
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\appsettings.Development.json
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\appsettings.json
+D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\ElectronicsStore.BackendApi.staticwebassets.runtime.json
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\ElectronicsStore.BackendApi.exe
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\ElectronicsStore.ApiServices.deps.json
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\ElectronicsStore.ApiServices.dll
@@ -20,4 +21,3 @@ D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\obj\Debug\net7.0\Electroni
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\obj\Debug\net7.0\refint\ElectronicsStore.ApiServices.dll
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\obj\Debug\net7.0\ElectronicsStore.ApiServices.pdb
 D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\obj\Debug\net7.0\ref\ElectronicsStore.ApiServices.dll
-D:\nlcs\ElectronicsStore\ElectronicsStore.ApiServices\bin\Debug\net7.0\ElectronicsStore.BackendApi.staticwebassets.runtime.json

@@ -24,10 +24,13 @@
         <input class="form-control" asp-for="Password" type="password" placeholder="Password" />
         <label asp-for="Password">Mật khẩu</label>
         </div>
-        <div class="form-check mb-3">
+        <!--
+            <div class="form-check mb-3">
         <input class="form-check-input" asp-for="Remember" type="checkbox" value="" />
         <label class="form-check-label">Nhớ mật khẩu</label>
         </div>
+        -->
+        <input class="form-check-input" asp-for="Remember" type="hidden" value="@false" />
         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
         <a class="small" asp-action="ForgetPassword">Quên mật khẩu</a>
         <button class="btn btn-primary" type="submit">Đăng nhập</button>

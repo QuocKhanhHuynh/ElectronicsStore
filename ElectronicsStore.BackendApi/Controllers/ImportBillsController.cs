@@ -6,6 +6,7 @@ using ElectronicsStore.Models.Commons;
 using ElectronicsStore.Models.ImportBills;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,9 +18,11 @@ namespace ElectronicsStore.BackendApi.Controllers
     public class ImportBillsController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
-        public ImportBillsController(ApplicationDbContext context)
+        private readonly UserManager<User> _userManager;
+        public ImportBillsController(ApplicationDbContext context, UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         [HttpPost]
@@ -96,19 +99,29 @@ namespace ElectronicsStore.BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetImportBillDetail(int id)
         {
-            var query = from b in _context.ImportBillDetails
+            var query1 = from b in _context.ImportBillDetails
                                join p in _context.Products on b.ProductId equals p.Id
                                join i in _context.Images on p.Id equals i.ProductId
                                where b.ImportBillId == id && i.IsDefaul == true
                                select new { b, p, i };
-            var listItems = await query.Select(x => new ImportBillDetailViewModel()
+            var listItems = await query1.Select(x => new ImportBillDetailModel()
             {
                 ProductName = x.p.Name,
                 ImportPrice = x.b.ImportPrice,
                 Quanlity = x.b.Quantity,
                 Image = x.i.Url
             }).ToListAsync();
-            return Ok(new ApiResponseSuccess<List<ImportBillDetailViewModel>>(listItems));
+            var bill = await _context.ImportBills.FindAsync(id);
+            var result = new ImportBillDetailViewModel()
+            {
+                Id = bill.Id,
+                Datecreate = bill.DateCreate,
+                SupplierName = _context.Suppliers.Find(bill.SupplierId).Name,
+                TotalValue = bill.TotalValue,
+                UserName = (await _userManager.FindByIdAsync(bill.UserId)).UserName,
+                Details = listItems
+            };
+            return Ok(new ApiResponseSuccess<ImportBillDetailViewModel>(result));
         }
     }
 }

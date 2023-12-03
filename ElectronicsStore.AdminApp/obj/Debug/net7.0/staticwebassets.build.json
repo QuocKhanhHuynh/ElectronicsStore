@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KhzNEpposa7PP9yD1/3GJyRo2CJ4Q5/cHyqhN4Ud3x4=",
+  "Hash": "uFou1MexW66/GdR1rwxVvb6MFPvTKhDMPqmIutg7H/Y=",
   "Source": "ElectronicsStore.AdminApp",
   "BasePath": "_content/ElectronicsStore.AdminApp",
   "Mode": "Default",
@@ -1241,23 +1241,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\mustache.js"
-    },
-    {
-      "Identity": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\00f6695a-8ea9-4cbc-927a-970dda4b929c.png",
-      "SourceId": "ElectronicsStore.BackendApi",
-      "SourceType": "Project",
-      "ContentRoot": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\",
-      "BasePath": "_content/ElectronicsStore.BackendApi",
-      "RelativePath": "Image/00f6695a-8ea9-4cbc-927a-970dda4b929c.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Image\\00f6695a-8ea9-4cbc-927a-970dda4b929c.png"
     },
     {
       "Identity": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\01e15b10-490e-4866-8806-e4de47b403cd.jpg",
@@ -3128,6 +3111,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\e3e6bb58-5882-4ab5-b12b-f1ff4867ce3e.jpg"
+    },
+    {
+      "Identity": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\e5d04a56-f9f2-4033-82db-e060ce448bb1.jpg",
+      "SourceId": "ElectronicsStore.BackendApi",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore.BackendApi",
+      "RelativePath": "Image/e5d04a56-f9f2-4033-82db-e060ce448bb1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\e5d04a56-f9f2-4033-82db-e060ce448bb1.jpg"
     },
     {
       "Identity": "D:\\nlcs\\ElectronicsStore\\ElectronicsStore.BackendApi\\wwwroot\\Image\\e6c5295d-9226-467e-850f-c27718cfd2f3.jpg",

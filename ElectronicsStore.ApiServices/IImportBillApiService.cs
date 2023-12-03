@@ -13,7 +13,7 @@ namespace ElectronicsStore.ApiServices
     {
         Task<ApiResponse<bool>> CreateImportBill(ImportBillCreateRequest request);
         Task<ApiResponse<Pagination<ImportBillViewModel>>> GetImportBills(int? id, string? userId, int pageIndex, int pageSize);
-        Task<ApiResponse<List<ImportBillDetailViewModel>>> GetImportBillDetail(int id);
+        Task<ApiResponse<ImportBillDetailViewModel>> GetImportBillDetail(int id);
 
     }
 }

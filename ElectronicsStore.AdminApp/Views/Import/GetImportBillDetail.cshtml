@@ -1,8 +1,64 @@
-﻿@model List<ElectronicsStore.Models.ImportBills.ImportBillDetailViewModel>
+﻿@model ElectronicsStore.Models.ImportBills.ImportBillDetailViewModel
 @inject Microsoft.Extensions.Configuration.IConfiguration _configuration;
 
 @{
     ViewData["Title"] = "Chi tiết hóa đơn nhập";
+}
+
+@{
+    var content = "";
+    content += " <html lang=\"en\">";
+    content += "             <head> ";
+    content += "<meta charset=\"utf-8\" />";
+    content += " <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />";
+    content += " <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />";
+    content += "<meta name=\"description\" content=\"\" />";
+    content += " <meta name=\"author\" content=\"\" />";
+    content += " <link href=\"https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css\" rel=\"stylesheet\" />";
+    content += " <link href=\"/css/styles.css\" rel=\"stylesheet\" />";
+    content += " <script src=\"https://use.fontawesome.com/releases/v6.1.0/js/all.js\" crossorigin=\"anonymous\"></script>";
+    content += " </head>";
+    content += "<body class=\"sb-nav-fixed\">";
+    content += "<div id=\"layoutSidenav\">";
+    content += " <div id=\"layoutSidenav_content\">";
+    content += " <main>";
+    content += "<div class=\"container-fluid px-4\">";
+    content += "<div class=\"card mb-4\">";
+    content += "<div class=\"card-body\">";
+    content += " <div class=\"col-md-12\">";
+    content += " <div>";
+    content += "<dl class=\"row\">";
+    content += "<dt class=\"col-sm-2\">Mã hóa đơn</dt>";
+    content += " <dd class=\"col-sm-10\">" + @Model.Id + "</dd>";
+    content += " <dt class=\"col-sm-2\"> Ngày tạo</dt>";
+    content += "<dd class=\"col-sm-10\">" + @Model.Datecreate + "</dd>";
+    content += "<dt class=\"col-sm-2\">Tổng giá trị</dt>";
+    content += " <dd class=\"col-sm-10\">" + @Model.TotalValue.ToString("N0") + "đ </dd>";
+    content += "<dt class=\"col-sm-2\">Nhà cung cấp</dt>";
+    content += "<dd class=\"col-sm-10\">" + @Model.SupplierName + " </dd>";
+    content += " <dt class=\"col-sm-2\">Người tạo</dt>";
+    content += "<dd class=\"col-sm-10\">" + @Model.UserName + "</dd>";
+    content += "</dl>";
+    content += "</div>";
+    content += "</div>";
+    content += "<hr />";
+    content += "<h4>Sản phẩm</h4>";
+    content += "<hr />";
+    content += "<div class=\"row\">";
+    content += "<div class=\"col-md-12\">";
+    content += "<table class=\"table\">";
+    content += "<thead>";
+    content += "<tr>";
+    content += "<th>Tên sản phẩm</th><th>Số lượng</th><th>Giá nhập</th></tr></thead><tbody>";
+    foreach (var item in Model.Details)
+    {
+        content += "<tr>";
+        content += "<td>" + item.ProductName + "</td>";
+        content += "<td>" + item.Quanlity.ToString("N0") + "</td>";
+        content += "<td>" + item.ImportPrice.ToString("N0") + "đ</td>";
+        content += "</ tr >";
+    }
+    content += "</tbody></table></div></div></div></div></div></main></div></div></body></html>";
 }
 
 <div class="container-fluid px-4">
@@ -16,6 +72,45 @@
             <a class="btn btn-success" asp-action="Index" asp-controller="Import">Về danh sách hóa đơn nhập</a>
         </div>
         <div class="card-body">
+            <div class="col-md-12">
+                <div>
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Id)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Id)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Datecreate)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Datecreate)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.TotalValue)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.Raw(Model.TotalValue.ToString("N0") + "đ")
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.SupplierName)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.SupplierName)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.UserName)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.UserName)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <hr />
+            <h4>Sản phẩm</h4>
+            <hr />
             <div class="row">
                 <div class="col-md-12">
                     <table class="table">
@@ -36,7 +131,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model)
+                            @foreach (var item in Model.Details)
                             {
                                 <tr>
                                     <td>
@@ -57,6 +152,16 @@
                     </table>
 
                 </div>
+            </div>
+            <div class="card-header">
+                <!--<a class="btn btn-success" href="/Home/UpdateBill?id=(ViewBag.BillId)&statusId=(ViewBag.StatusId + 1)">Cập nhật trạng thái</a>-->
+                <form asp-action="GeneratePdf" asp-controller="Import" method="post">
+                    <input type="hidden" value="@content" name="content" />
+                    <input type="hidden" value="@Model.Id" name="billId" />
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-primary">Xuất hóa đơn</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
